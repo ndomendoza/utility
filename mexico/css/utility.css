@@ -54,6 +54,7 @@ img, object, embed, video {
 body {
   font: 16px Helvetica;
   background: #1abc9c;
+  margin-top:30px;
 }
 
 

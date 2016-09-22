@@ -1,0 +1,136 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Utility</title>
+<link href="css/boilerplate.css" rel="stylesheet" type="text/css">
+<link href="css/utility.css" rel="stylesheet" type="text/css">
+
+
+<!-- fancybox -->
+
+<script type="text/javascript"  src="lib/jquery-1.10.1.min.js"></script>
+<script type="text/javascript"  src="source/jquery.fancybox.js" ></script>
+
+<link rel="stylesheet" href="source/jquery.fancybox.css" type="text/css" media="screen" />
+<script type="text/javascript" src="source/helpers/jquery.fancybox-media.js"></script>
+
+
+
+ 
+
+<!-- fin fancybox -->
+
+
+<!-- inicio de 360 -->
+
+     <script type="text/javascript" src="js/libraries/jquery.js"></script>
+     <script type="text/javascript" src="js/libraries/jquery.mobile.vmouse.js"></script> 
+     <script type="text/javascript" src="js/libraries/jquery.mousewheel.min.js"></script> 
+     
+     <script type="text/javascript" src="js/pngFixer.js"></script>
+     <script type="text/javascript" src="js/buttons.js"></script>
+     
+     <script type="text/javascript" src="js/Expo360.js"></script>
+     
+     <script type="text/javascript">
+		jQuery(document).ready(function($) {
+			var expo = new Expo360({xml:"configuration/settings2.xml", where:"#viewer"});
+		});
+	
+
+	
+    </script>
+    
+
+<!-- fin de 360 -->
+
+
+
+
+
+
+<!-- 
+To learn more about the conditional comments around the html tags at the top of the file:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+
+Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
+* insert the link to your js here
+* remove the link below to the html5shiv
+* add the "no-js" class to the html tags at the top
+* you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
+-->
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="js/respond.min.js"></script>
+
+ 
+
+
+</head>
+<body class="fondotrailers">
+
+<div class="fluid logo"> 
+ 
+<table width="100%" border="0">
+  <tbody>
+    <tr>
+      <td align="left" valign="middle" scope="col"><h1 class="rojo"><img src="images/4000dx.png" width="200" alt=""/></h1>
+        <br>
+ <a href="catalogo.html" class="azul"><div style=" vertical-align:bottom">  <img src="images/back.png" width="25" alt=""/> Regresar</div> </a>
+      
+      </td>
+      <td align="right" valign="middle" scope="col"><a href="utility.html"><img src="images/logoch.png" width="250" alt=""/></a></td>
+    </tr>
+  </tbody>
+</table></div>
+
+<div class="fluid menu">
+
+  <a href="ubicaciones.html" > <div class=" btnmenu">Puntos de venta </div></a>
+           
+        <a href="contacto.html"> <div class=" btnmenu">	 Contacto</div></a>
+        
+</div>
+
+
+
+<div class="fluid div3000r redondear">
+
+
+<div style="right:0; margin-right:80px; text-align:right"><img src="images/360.png" height="50"  alt=""/></div>
+
+
+
+<div id="viewer"></div>
+
+
+ 
+</div>
+
+
+
+
+
+<div id="footer-page" class="fluid menuinferiorcat " style=" width:100%;position:fixed; bottom:0; left:0;">
+
+<ul class="infcat " >
+  <li> <a  href="cat1.html">  <img src="images/4000dx.png" width="150" alt=""/> </a></li>
+  <li class=" infcatactivo "><a  href="3602.html">CARACTERÍSTICAS</a></li>
+  <li class="infcat"><a href="espe2.html">ESPECIFICACIONES</a></li>
+  <li class="infcat"><a href="fotos2.html">FOTOS</a></li>
+  <li class="infcat"><a href="presupuesto2.html">SOLICITAR COTIZACIÓN</a></li>
+</ul>
+
+</div>
+
+
+</body>
+
+</html> 
