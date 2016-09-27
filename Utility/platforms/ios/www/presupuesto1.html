@@ -10,11 +10,14 @@
 <title>Utility</title>
 <link href="css/boilerplate.css" rel="stylesheet" type="text/css">
 <link href="css/utility.css" rel="stylesheet" type="text/css">
-
+<style>
+			input,textarea{ font-family:arial; font-size:12px}
+			</style>
 
 <!-- fancybox -->
 
-<script type="text/javascript"  src="lib/jquery-1.10.1.min.js"></script>
+<!--<script type="text/javascript"  src="lib/jquery-1.10.1.min.js"></script>-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script type="text/javascript"  src="source/jquery.fancybox.js" ></script>
 
 <link rel="stylesheet" href="source/jquery.fancybox.css" type="text/css" media="screen" />
@@ -92,23 +95,23 @@ Do the following if you're using your customized build of modernizr (http://www.
     </center>
   </header>
   <div class="name">
-    <input class="first" placeholder="Nombre" type="text">
-    <input class="last" placeholder="Apellido" type="text">
-    <input class="email" placeholder="Teléfono" type="text">
+    <input class="first" placeholder="Nombre" type="text" id="nombre">
+    <input class="last" placeholder="Apellido" type="text" id="apellido">
+    <input class="email" placeholder="Teléfono" type="text" id="telefono">
   </div>
  
   <div class="contact">
-    <input class="email" placeholder="Correo " type="text">
+    <input class="email" placeholder="Correo " type="text" id="correo">
   </div>
   <div class="message">
-    <textarea placeholder="Dudas, comentarios o sugerencias"></textarea>
+    <textarea placeholder="Dudas, comentarios o sugerencias" id="comentarios"></textarea>
   </div>
   
    <div style="text-align:right; padding:10px; color:#858585">¿Eres cliente de Utility? <input type="radio" name="cliente" value="sí" id="cliente_0">
            SÍ</label> / <input type="radio" name="cliente" value="no" id="cliente_1">
            NO</label></div>
   <footer>
-    <button>Enviar</button>
+    <button id="enviar">Enviar</button>
   </footer><br><br><br><br>
 </div>
 
@@ -141,6 +144,117 @@ Do the following if you're using your customized build of modernizr (http://www.
 tamano=$("#footer-page").height();
 paginatamano=$(document).height();
 $(".content-page").css("height",paginatamano-tamano-10+"px");
+
+</script>
+
+<script>
+
+		$("#enviar").click(function(){
+			if(validarFormulario()){enviarMail();}	
+		})
+
+
+	function validarFormulario(){
+		if(esVacio("nombre")||esVacio("apellido")||esVacio("telefono")||esVacio("comentarios")){
+			alert("Por favor, completa todos los campos");	
+			return false;
+		}else if( !isValidEmailAddress( $("#correo").val() ) ) { 
+			alert("Por favor, revisa que tu correo electrónico esté correcto");	
+			return false;
+		 }else if(!esTelefono("telefono")){
+			alert("El Teléfono debe contener 10 dígitos si es fijo y 13 si es celular");
+			return false;
+		}else if(!esClienteONo("cliente_0","cliente_1")){
+			alert("Selecciona si eres cliente o no");
+			return false;
+		}
+		return true;
+	}
+
+	function isValidEmailAddress(emailAddress) {
+		var pattern = /^([a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+(\.[a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+)*|"((([ \t]*\r\n)?[ \t]+)?([\x01-\x08\x0b\x0c\x0e-\x1f\x7f\x21\x23-\x5b\x5d-\x7e\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|\\[\x01-\x09\x0b\x0c\x0d-\x7f\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))*(([ \t]*\r\n)?[ \t]+)?")@(([a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.)+([a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.?$/i;
+		return pattern.test(emailAddress);
+	};
+
+	/*cliente*/
+	function esClienteONo(obj1,obj2){
+		a=$("#"+obj1);
+		b=$("#"+obj2);
+		
+		if($(a).prop("checked")||$(b).prop("checked")){
+			return true	
+		}else{
+			return false
+		}
+	}
+
+
+/*Vacios*/
+function esVacio(obj){
+	a=$("#"+obj);
+	if (a.val().trim()=="") {
+      return true
+	}
+	return false;
+}
+
+
+function esTelefono(obj){
+	a=$("#"+obj).val();
+	var tel = a.replace(/[^0-9]/g, '');
+	
+	if(tel.length>=10&&tel.length<=13){
+		return true
+	}else{
+		return false;	
+	}
+}
+
+
+
+function enviarMail(){
+	
+	escliente="No es cliente de Utility";
+	if($("#cliente_0").prop("checked")){
+		escliente="Sí es cliente de Utility";
+	}
+	
+	$.ajax({
+    type: 'POST',
+    url: "https://api.mailgun.net/v3/utilityapp.ndodesign.net/messages",
+    data: {
+      "from": "ventas@utility.com.mx",
+      "to": $("#correo").val(),//"ventas@utility.com.mx",
+      "subject": "Mensaje desde app",
+      "text": "Nombre: "+$("#nombre").val()+" "+$("#apellido").val()+"\nTeléfono: "+$("#telefono").val()+"\nCorreo: "+$("#correo").val()+"\n"+escliente+"\n\n"+$("#comentarios").val()
+    },
+	beforeSend: function (xhr) {
+    xhr.setRequestHeader ("Authorization", "Basic " + btoa("api" + ":" + "key-3bf3f77adbe1e565d381115f089ff8ff"));
+    },
+    success: function(data) {
+        alert("Tu mensaje ha sido enviado");
+		limpiar();
+    },
+    error: function(xhr) { // if error occured
+        alert("No se pudo enviar el correo. Intenta nuevamente");
+	},
+    complete: function() {
+        //
+    },
+    dataType: 'json'
+});
+	
+	
+	function limpiar(){
+		$("#nombre").val("");
+		$("#apellido").val("");
+		$("#telefono").val("");
+		$("#correo").val("");
+		$("#comentarios").val("");
+		$("#cliente_0").prop("checked",false);
+		$("#cliente_1").prop("checked",false);
+	}
+}
 
 </script>
 

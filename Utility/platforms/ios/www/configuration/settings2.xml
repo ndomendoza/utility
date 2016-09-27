@@ -25,7 +25,7 @@
 	(usually to not lose quality you 
 		set this to 1 if you're not using big images
 		set this to the minimum between (bigImage width / normalImage width) AND (bigImage height / normalImage height)) -->
-	<maxZoom>2.5</maxZoom>
+	<maxZoom>1</maxZoom>
 	<!-- zoom speed on mousewheel and on click of the plus and minus buttons of the zoom-slider  -->
 	<zoomSpeed>0.2</zoomSpeed>
 	<!-- ease applied to the zooming (minimum value 1 for no ease)  -->
@@ -232,6 +232,7 @@
 	</hotspotsButtons>
 	
 
+
 	<!-- Images Path (must end in '/') -->
 	<imagesPath>images/4000dx/peque/</imagesPath>
 	<!-- Big Images Path (must end in '/') -->
@@ -241,166 +242,791 @@
 	<images>
 		<image src = "caja_nuevo_0015.png">
 		 <hotspot>
+			<button_id>der</button_id>
+			<x>90</x><y>250</y><type>big</type><tooltip>PLACA PERNO REY</tooltip>
+			<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs1.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+			<button_id>izq</button_id>
+			<x>260</x><y>270</y><type>big</type><tooltip>PATINES</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs2.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
 				<button_id>der</button_id>
-				<x>90</x>
-				<y>250</y>
-				<type>big</type>
-				<tooltip>PLACA PERNO REY</tooltip>
-				<content>
-					<background_color>#FFFFFF</background_color>
-					<background_alpha>1</background_alpha>
-					<background_pattern>none</background_pattern>
-	
-					<html>images/3000r/hs1.html</html>
-					
-					<fadeTime>400</fadeTime>
-					
-					<close_button_id>close</close_button_id>
-					<closeOffsetX>-30</closeOffsetX>
-					<closeOffsetY>10</closeOffsetY>
-				</content>
-			</hotspot>
-			
-			<hotspot>
+				<x>300</x><y>120</y><type>big</type><tooltip>TOLDO</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/4000dx/hs3.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
 				<button_id>izq</button_id>
-				<x>260</x>
-				<y>270</y>
-				<type>big</type>
-				<tooltip>PATINES</tooltip>
-				<content>
-					<background_color>#FFFFFF</background_color>
-					<background_alpha>1</background_alpha>
-					<background_pattern>none</background_pattern>
-	
-					<html>images/3000r/hs2.html</html>
-					
-					<fadeTime>400</fadeTime>
-					
-					<close_button_id>close</close_button_id>
-					<closeOffsetX>-30</closeOffsetX>
-					<closeOffsetY>10</closeOffsetY>
-				</content>
-			</hotspot>
-			
-				<hotspot>
+				<x>420</x><y>170</y><type>big</type><tooltip>PANELES EXTERIORES</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs4.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>izq</button_id>
+				<x>550</x><y>260</y><type>big</type><tooltip>SUSPENSIÓN</tooltip>	<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs5.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX>	<closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
 				<button_id>der</button_id>
-				<x>300</x>
-				<y>120</y>
-				<type>big</type>
-				<tooltip>TOLDO</tooltip>
-				<content>
-					<background_color>#FFFFFF</background_color>
-					<background_alpha>1</background_alpha>
-					<background_pattern>none</background_pattern>
-	
-					<html>images/4000dx/hs3.html</html>
-					
-					<fadeTime>400</fadeTime>
-					
-					<close_button_id>close</close_button_id>
-					<closeOffsetX>-30</closeOffsetX>
-					<closeOffsetY>10</closeOffsetY>
-				</content>
-			</hotspot>
-	<hotspot>
-				<button_id>izq</button_id>
-				<x>420</x>
-				<y>170</y>
-				<type>big</type>
-				<tooltip>PANELES EXTERIORES</tooltip>
-				<content>
-					<background_color>#FFFFFF</background_color>
-					<background_alpha>1</background_alpha>
-					<background_pattern>none</background_pattern>
-	
-					<html>images/3000r/hs4.html</html>
-					
-					<fadeTime>400</fadeTime>
-					
-					<close_button_id>close</close_button_id>
-					<closeOffsetX>-30</closeOffsetX>
-					<closeOffsetY>10</closeOffsetY>
-				</content>
-			</hotspot>
-
-	<hotspot>
-				<button_id>izq</button_id>
-				<x>550</x>
-				<y>260</y>
-				<type>big</type>
-				<tooltip>SUSPENSIÓN</tooltip>
-				<content>
-					<background_color>#FFFFFF</background_color>
-					<background_alpha>1</background_alpha>
-					<background_pattern>none</background_pattern>
-	
-					<html>images/3000r/hs5.html</html>
-					
-					<fadeTime>400</fadeTime>
-					
-					<close_button_id>close</close_button_id>
-					<closeOffsetX>-30</closeOffsetX>
-					<closeOffsetY>10</closeOffsetY>
-				</content>
-			</hotspot>
-			
-			
-			<hotspot>
-				<button_id>der</button_id>
-				<x>630</x>
-				<y>175</y>
-				<type>big</type>
-				<tooltip>MARCO TRASERO</tooltip>
-				<content>
-					<background_color>#FFFFFF</background_color>
-					<background_alpha>1</background_alpha>
-					<background_pattern>none</background_pattern>
-	
-					<html>images/3000r/hs6.html</html>
-					
-					<fadeTime>400</fadeTime>
-					
-					<close_button_id>close</close_button_id>
-					<closeOffsetX>-30</closeOffsetX>
-					<closeOffsetY>10</closeOffsetY>
-				</content>
+				<x>630</x><y>175</y><type>big</type><tooltip>MARCO TRASERO</tooltip><content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs6.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
 			</hotspot>
 					
 
 			</image>
 	
 	
-	<image src = "caja_nuevo_0017.png"/>
-	 <image src = "caja_nuevo_0019.png"/>
-    <image src = "caja_nuevo_0021.png"/>
-    <image src = "caja_nuevo_0023.png"/>
-	<image src = "caja_nuevo_0025.png"/>
-    <image src = "caja_nuevo_0027.png"/>
-    <image src = "caja_nuevo_0029.png"/>
-    <image src = "caja_nuevo_0031.png"/>
-	<image src = "caja_nuevo_0033.png"/>
-    <image src = "caja_nuevo_0035.png"/>
-    <image src = "caja_nuevo_0037.png"/>
-    <image src = "caja_nuevo_0039.png"/>
-    <image src = "caja_nuevo_0041.png"/>
-    <image src = "caja_nuevo_0043.png"/>
-    <image src = "caja_nuevo_0045.png"/>
-    <image src = "caja_nuevo_0047.png"/>
-    <image src = "caja_nuevo_0049.png"/>
+	<image src = "caja_nuevo_0017.png">
+		 <hotspot>
+			<button_id>der</button_id>
+			<x>70</x><y>250</y><type>big</type><tooltip>PLACA PERNO REY</tooltip>
+			<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs1.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+			<button_id>izq</button_id>
+			<x>240</x><y>270</y><type>big</type><tooltip>PATINES</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs2.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>der</button_id>
+				<x>300</x><y>120</y><type>big</type><tooltip>TOLDO</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/4000dx/hs3.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>izq</button_id>
+				<x>420</x><y>170</y><type>big</type><tooltip>PANELES EXTERIORES</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs4.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>izq</button_id>
+				<x>550</x><y>260</y><type>big</type><tooltip>SUSPENSIÓN</tooltip>	<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs5.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX>	<closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>der</button_id>
+				<x>600</x><y>175</y><type>big</type><tooltip>MARCO TRASERO</tooltip><content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs6.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+			</hotspot>
+	</image>
+	<image src = "caja_nuevo_0019.png">
+			 <hotspot>
+			<button_id>der</button_id>
+			<x>70</x><y>250</y><type>big</type><tooltip>PLACA PERNO REY</tooltip>
+			<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs1.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+			<button_id>izq</button_id>
+			<x>240</x><y>270</y><type>big</type><tooltip>PATINES</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs2.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>der</button_id>
+				<x>300</x><y>120</y><type>big</type><tooltip>TOLDO</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/4000dx/hs3.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>izq</button_id>
+				<x>420</x><y>170</y><type>big</type><tooltip>PANELES EXTERIORES</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs4.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>izq</button_id>
+				<x>550</x><y>260</y><type>big</type><tooltip>SUSPENSIÓN</tooltip>	<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs5.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX>	<closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>der</button_id>
+				<x>570</x><y>175</y><type>big</type><tooltip>MARCO TRASERO</tooltip><content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs6.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+			</hotspot>
+	</image>
+    <image src = "caja_nuevo_0021.png">
+	 <hotspot>
+			<button_id>der</button_id>
+			<x>70</x><y>250</y><type>big</type><tooltip>PLACA PERNO REY</tooltip>
+			<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs1.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+			<button_id>izq</button_id>
+			<x>240</x><y>270</y><type>big</type><tooltip>PATINES</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs2.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>der</button_id>
+				<x>300</x><y>120</y><type>big</type><tooltip>TOLDO</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/4000dx/hs3.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>izq</button_id>
+				<x>420</x><y>170</y><type>big</type><tooltip>PANELES EXTERIORES</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs4.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>izq</button_id>
+				<x>520</x><y>260</y><type>big</type><tooltip>SUSPENSIÓN</tooltip>	<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs5.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX>	<closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>der</button_id>
+				<x>540</x><y>175</y><type>big</type><tooltip>MARCO TRASERO</tooltip><content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs6.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+			</hotspot>
+	</image>
+    <image src = "caja_nuevo_0023.png">
+	 <hotspot>
+			<button_id>der</button_id>
+			<x>85</x><y>250</y><type>big</type><tooltip>PLACA PERNO REY</tooltip>
+			<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs1.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+			<button_id>izq</button_id>
+			<x>240</x><y>270</y><type>big</type><tooltip>PATINES</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs2.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>der</button_id>
+				<x>300</x><y>120</y><type>big</type><tooltip>TOLDO</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/4000dx/hs3.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>izq</button_id>
+				<x>420</x><y>170</y><type>big</type><tooltip>PANELES EXTERIORES</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs4.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>izq</button_id>
+				<x>500</x><y>260</y><type>big</type><tooltip>SUSPENSIÓN</tooltip>	<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs5.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX>	<closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>der</button_id>
+				<x>510</x><y>175</y><type>big</type><tooltip>MARCO TRASERO</tooltip><content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs6.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+			</hotspot>
+	</image>
+	<image src = "caja_nuevo_0025.png">
+	 <hotspot>
+			<button_id>der</button_id>
+			<x>85</x><y>250</y><type>big</type><tooltip>PLACA PERNO REY</tooltip>
+			<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs1.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+			<button_id>izq</button_id>
+			<x>240</x><y>270</y><type>big</type><tooltip>PATINES</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs2.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot> 
+		<hotspot>
+				<button_id>der</button_id>
+				<x>300</x><y>120</y><type>big</type><tooltip>TOLDO</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/4000dx/hs3.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>izq</button_id>
+				<x>420</x><y>170</y><type>big</type><tooltip>PANELES EXTERIORES</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs4.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>izq</button_id>
+				<x>500</x><y>260</y><type>big</type><tooltip>SUSPENSIÓN</tooltip>	<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs5.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX>	<closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>der</button_id>
+				<x>470</x><y>175</y><type>big</type><tooltip>MARCO TRASERO</tooltip><content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs6.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+			</hotspot>
+	</image>
+    <image src = "caja_nuevo_0027.png">	 <hotspot>
+			<button_id>der</button_id>
+			<x>160</x><y>250</y><type>big</type><tooltip>PLACA PERNO REY</tooltip>
+			<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs1.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+			<button_id>izq</button_id>
+			<x>280</x><y>270</y><type>big</type><tooltip>PATINES</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs2.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot> 
+		<hotspot>
+				<button_id>der</button_id>
+				<x>300</x><y>120</y><type>big</type><tooltip>TOLDO</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/4000dx/hs3.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>izq</button_id>
+				<x>420</x><y>170</y><type>big</type><tooltip>PANELES EXTERIORES</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs4.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>izq</button_id>
+				<x>450</x><y>260</y><type>big</type><tooltip>SUSPENSIÓN</tooltip>	<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs5.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX>	<closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>izq</button_id>
+				<x>480</x><y>175</y><type>big</type><tooltip>MARCO TRASERO</tooltip><content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs6.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+			</hotspot>	</image>
+    <image src = "caja_nuevo_0029.png">
+	<hotspot>
+			<button_id>der</button_id>
+			<x>260</x><y>250</y><type>big</type><tooltip>PLACA PERNO REY</tooltip>
+			<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs1.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+			<button_id>izq</button_id>
+			<x>400</x><y>270</y><type>big</type><tooltip>PATINES</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs2.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot> 
+		<hotspot>
+				<button_id>der</button_id>
+				<x>300</x><y>80</y><type>big</type><tooltip>TOLDO</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/4000dx/hs3.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+	</image>
+    <image src = "caja_nuevo_0031.png"><hotspot>
+			<button_id>der</button_id>
+			<x>330</x><y>250</y><type>big</type><tooltip>PLACA PERNO REY</tooltip>
+			<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs1.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+			<button_id>izq</button_id>
+			<x>450</x><y>270</y><type>big</type><tooltip>PATINES</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs2.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot> 
+		<hotspot>
+				<button_id>der</button_id>
+				<x>400</x><y>80</y><type>big</type><tooltip>TOLDO</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/4000dx/hs3.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		</image>
+	<image src = "caja_nuevo_0033.png">
+	<hotspot>
+			<button_id>der</button_id>
+			<x>450</x><y>250</y><type>big</type><tooltip>PLACA PERNO REY</tooltip>
+			<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs1.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+			<button_id>izq</button_id>
+			<x>390</x><y>270</y><type>big</type><tooltip>PATINES</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs2.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot> 
+		<hotspot>
+				<button_id>der</button_id>
+				<x>300</x><y>120</y><type>big</type><tooltip>TOLDO</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/4000dx/hs3.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>izq</button_id>
+				<x>380</x><y>170</y><type>big</type><tooltip>PANELES EXTERIORES</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs4.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>der</button_id>
+				<x>290</x><y>260</y><type>big</type><tooltip>SUSPENSIÓN</tooltip>	<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs5.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX>	<closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>izq</button_id>
+				<x>300</x><y>175</y><type>big</type><tooltip>MARCO TRASERO</tooltip><content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs6.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+			</hotspot>	
+	</image>
+    <image src = "caja_nuevo_0035.png">
+	<hotspot>
+			<button_id>der</button_id>
+			<x>490</x><y>250</y><type>big</type><tooltip>PLACA PERNO REY</tooltip>
+			<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs1.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+			<button_id>izq</button_id>
+			<x>450</x><y>270</y><type>big</type><tooltip>PATINES</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs2.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot> 
+		<hotspot>
+				<button_id>der</button_id>
+				<x>300</x><y>120</y><type>big</type><tooltip>TOLDO</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/4000dx/hs3.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot> 
+				<button_id>izq</button_id>
+				<x>380</x><y>170</y><type>big</type><tooltip>PANELES EXTERIORES</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs4.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>izq</button_id>
+				<x>310</x><y>260</y><type>big</type><tooltip>SUSPENSIÓN</tooltip>	<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs5.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX>	<closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>izq</button_id>
+				<x>260</x><y>175</y><type>big</type><tooltip>MARCO TRASERO</tooltip><content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs6.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+			</hotspot>	
+	</image>
+    <image src = "caja_nuevo_0037.png">
+	<hotspot>
+			<button_id>der</button_id>
+			<x>540</x><y>250</y><type>big</type><tooltip>PLACA PERNO REY</tooltip>
+			<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs1.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+			<button_id>izq</button_id>
+			<x>450</x><y>270</y><type>big</type><tooltip>PATINES</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs2.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot> 
+		<hotspot>
+				<button_id>der</button_id>
+				<x>300</x><y>120</y><type>big</type><tooltip>TOLDO</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/4000dx/hs3.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot> 
+				<button_id>izq</button_id>
+				<x>380</x><y>170</y><type>big</type><tooltip>PANELES EXTERIORES</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs4.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>izq</button_id>
+				<x>310</x><y>260</y><type>big</type><tooltip>SUSPENSIÓN</tooltip>	<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs5.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX>	<closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>izq</button_id>
+				<x>215</x><y>175</y><type>big</type><tooltip>MARCO TRASERO</tooltip><content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs6.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+			</hotspot>	
+	</image>
+    <image src = "caja_nuevo_0039.png">
+	<hotspot>
+			<button_id>der</button_id>
+			<x>570</x><y>250</y><type>big</type><tooltip>PLACA PERNO REY</tooltip>
+			<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs1.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+			<button_id>izq</button_id>
+			<x>480</x><y>270</y><type>big</type><tooltip>PATINES</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs2.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot> 
+		<hotspot>
+				<button_id>der</button_id>
+				<x>300</x><y>120</y><type>big</type><tooltip>TOLDO</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/4000dx/hs3.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot> 
+				<button_id>izq</button_id>
+				<x>380</x><y>170</y><type>big</type><tooltip>PANELES EXTERIORES</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs4.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>izq</button_id>
+				<x>280</x><y>260</y><type>big</type><tooltip>SUSPENSIÓN</tooltip>	<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs5.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX>	<closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>izq</button_id>
+				<x>180</x><y>175</y><type>big</type><tooltip>MARCO TRASERO</tooltip><content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs6.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+			</hotspot>	
+	</image>
+    <image src = "caja_nuevo_0041.png">
+	<hotspot>
+			<button_id>der</button_id>
+			<x>570</x><y>250</y><type>big</type><tooltip>PLACA PERNO REY</tooltip>
+			<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs1.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+			<button_id>izq</button_id>
+			<x>510</x><y>270</y><type>big</type><tooltip>PATINES</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs2.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot> 
+		<hotspot>
+				<button_id>der</button_id>
+				<x>300</x><y>120</y><type>big</type><tooltip>TOLDO</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/4000dx/hs3.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot> 
+				<button_id>izq</button_id>
+				<x>380</x><y>170</y><type>big</type><tooltip>PANELES EXTERIORES</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs4.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>izq</button_id>
+				<x>250</x><y>260</y><type>big</type><tooltip>SUSPENSIÓN</tooltip>	<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs5.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX>	<closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>izq</button_id>
+				<x>140</x><y>175</y><type>big</type><tooltip>MARCO TRASERO</tooltip><content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs6.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+			</hotspot>
+			</image>
+    <image src = "caja_nuevo_0043.png">
+	<hotspot>
+			<button_id>der</button_id>
+			<x>570</x><y>250</y><type>big</type><tooltip>PLACA PERNO REY</tooltip>
+			<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs1.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+			<button_id>izq</button_id>
+			<x>510</x><y>270</y><type>big</type><tooltip>PATINES</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs2.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot> 
+		<hotspot>
+				<button_id>der</button_id>
+				<x>300</x><y>120</y><type>big</type><tooltip>TOLDO</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/4000dx/hs3.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot> 
+				<button_id>izq</button_id>
+				<x>380</x><y>170</y><type>big</type><tooltip>PANELES EXTERIORES</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs4.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>izq</button_id>
+				<x>230</x><y>260</y><type>big</type><tooltip>SUSPENSIÓN</tooltip>	<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs5.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX>	<closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>izq</button_id>
+				<x>100</x><y>175</y><type>big</type><tooltip>MARCO TRASERO</tooltip><content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs6.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+			</hotspot>
+	</image>
+    <image src = "caja_nuevo_0045.png">
+	<hotspot>
+			<button_id>der</button_id>
+			<x>560</x><y>250</y><type>big</type><tooltip>PLACA PERNO REY</tooltip>
+			<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs1.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+			<button_id>izq</button_id>
+			<x>510</x><y>270</y><type>big</type><tooltip>PATINES</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs2.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot> 
+		<hotspot>
+				<button_id>der</button_id>
+				<x>300</x><y>120</y><type>big</type><tooltip>TOLDO</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/4000dx/hs3.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot> 
+				<button_id>izq</button_id>
+				<x>380</x><y>170</y><type>big</type><tooltip>PANELES EXTERIORES</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs4.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>izq</button_id>
+				<x>210</x><y>260</y><type>big</type><tooltip>SUSPENSIÓN</tooltip>	<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs5.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX>	<closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>izq</button_id>
+				<x>80</x><y>175</y><type>big</type><tooltip>MARCO TRASERO</tooltip><content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs6.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+			</hotspot>
+			</image>
+    <image src = "caja_nuevo_0047.png">
+	<hotspot>
+			<button_id>der</button_id>
+			<x>540</x><y>250</y><type>big</type><tooltip>PLACA PERNO REY</tooltip>
+			<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs1.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+			<button_id>izq</button_id>
+			<x>510</x><y>270</y><type>big</type><tooltip>PATINES</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs2.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot> 
+		<hotspot>
+				<button_id>der</button_id>
+				<x>300</x><y>120</y><type>big</type><tooltip>TOLDO</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/4000dx/hs3.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot> 
+				<button_id>izq</button_id>
+				<x>380</x><y>170</y><type>big</type><tooltip>PANELES EXTERIORES</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs4.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>izq</button_id>
+				<x>190</x><y>260</y><type>big</type><tooltip>SUSPENSIÓN</tooltip>	<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs5.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX>	<closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>izq</button_id>
+				<x>50</x><y>175</y><type>big</type><tooltip>MARCO TRASERO</tooltip><content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs6.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+			</hotspot>
+	</image>
+    <image src = "caja_nuevo_0049.png">
+		<hotspot>
+			<button_id>der</button_id>
+			<x>510</x><y>250</y><type>big</type><tooltip>PLACA PERNO REY</tooltip>
+			<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs1.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+			<button_id>izq</button_id>
+			<x>510</x><y>270</y><type>big</type><tooltip>PATINES</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs2.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot> 
+		<hotspot>
+				<button_id>der</button_id>
+				<x>300</x><y>120</y><type>big</type><tooltip>TOLDO</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/4000dx/hs3.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot> 
+				<button_id>izq</button_id>
+				<x>380</x><y>170</y><type>big</type><tooltip>PANELES EXTERIORES</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs4.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>izq</button_id>
+				<x>190</x><y>260</y><type>big</type><tooltip>SUSPENSIÓN</tooltip>	<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs5.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX>	<closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>izq</button_id>
+				<x>50</x><y>175</y><type>big</type><tooltip>MARCO TRASERO</tooltip><content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs6.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+			</hotspot>
+	</image>
+    <image src = "caja_nuevo_0051.png">
+	
+		<hotspot>
+			<button_id>izq</button_id>
+			<x>510</x><y>270</y><type>big</type><tooltip>PATINES</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs2.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot> 
+		<hotspot>
+				<button_id>der</button_id>
+				<x>300</x><y>120</y><type>big</type><tooltip>TOLDO</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/4000dx/hs3.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot> 
+				<button_id>izq</button_id>
+				<x>380</x><y>170</y><type>big</type><tooltip>PANELES EXTERIORES</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs4.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>izq</button_id>
+				<x>190</x><y>260</y><type>big</type><tooltip>SUSPENSIÓN</tooltip>	<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs5.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX>	<closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>izq</button_id>
+				<x>55</x><y>175</y><type>big</type><tooltip>MARCO TRASERO</tooltip><content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs6.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+			</hotspot>
+			</image>
+    <image src = "caja_nuevo_0053.png">
+	<hotspot>
+			<button_id>izq</button_id>
+			<x>490</x><y>270</y><type>big</type><tooltip>PATINES</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs2.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot> 
+		<hotspot>
+				<button_id>der</button_id>
+				<x>300</x><y>120</y><type>big</type><tooltip>TOLDO</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/4000dx/hs3.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot> 
+				<button_id>izq</button_id>
+				<x>380</x><y>170</y><type>big</type><tooltip>PANELES EXTERIORES</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs4.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot> 
+		<hotspot>
+				<button_id>izq</button_id>
+				<x>230</x><y>260</y><type>big</type><tooltip>SUSPENSIÓN</tooltip>	<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs5.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX>	<closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>izq</button_id>
+				<x>55</x><y>175</y><type>big</type><tooltip>MARCO TRASERO</tooltip><content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs6.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+			</hotspot>
+			</image>
+    <image src = "caja_nuevo_0055.png">
+	<hotspot>
+			<button_id>izq</button_id>
+			<x>460</x><y>270</y><type>big</type><tooltip>PATINES</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs2.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot> 
+		<hotspot>
+				<button_id>der</button_id>
+				<x>300</x><y>120</y><type>big</type><tooltip>TOLDO</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/4000dx/hs3.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot> 
+				<button_id>izq</button_id>
+				<x>380</x><y>170</y><type>big</type><tooltip>PANELES EXTERIORES</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs4.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>izq</button_id>
+				<x>270</x><y>260</y><type>big</type><tooltip>SUSPENSIÓN</tooltip>	<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs5.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX>	<closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>izq</button_id>
+				<x>85</x><y>175</y><type>big</type><tooltip>MARCO TRASERO</tooltip><content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs6.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+			</hotspot>
+			</image>
+    <image src = "caja_nuevo_0057.png">
+	
+	<hotspot>
+			<button_id>izq</button_id>
+			<x>450</x><y>270</y><type>big</type><tooltip>PATINES</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs2.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot> 
+		<hotspot>
+				<button_id>der</button_id>
+				<x>300</x><y>120</y><type>big</type><tooltip>TOLDO</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/4000dx/hs3.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot> 
+				<button_id>izq</button_id>
+				<x>380</x><y>170</y><type>big</type><tooltip>PANELES EXTERIORES</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs4.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>izq</button_id>
+				<x>320</x><y>260</y><type>big</type><tooltip>SUSPENSIÓN</tooltip>	<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs5.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX>	<closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>izq</button_id>
+				<x>150</x><y>175</y><type>big</type><tooltip>MARCO TRASERO</tooltip><content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs6.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+			</hotspot>
+	</image>
+    <image src = "caja_nuevo_0059.png">	<hotspot>
+				<button_id>izq</button_id>
+				<x>270</x><y>175</y><type>big</type><tooltip>MARCO TRASERO</tooltip><content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs6.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+			</hotspot></image>
+	<image src = "caja_nuevo_0001.png">	
+	<hotspot>
+				<button_id>izq</button_id>
+				<x>330</x><y>175</y><type>big</type><tooltip>MARCO TRASERO</tooltip><content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs6.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+			</hotspot>
+	</image>
+    <image src = "caja_nuevo_0003.png">
+	
+
+		<hotspot>
+				<button_id>der</button_id>
+				<x>300</x><y>120</y><type>big</type><tooltip>TOLDO</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/4000dx/hs3.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>izq</button_id>
+				<x>330</x><y>170</y><type>big</type><tooltip>PANELES EXTERIORES</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs4.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
 		
-		
-    <image src = "caja_nuevo_0051.png"/>
-    <image src = "caja_nuevo_0053.png"/>
-    <image src = "caja_nuevo_0055.png"/>
-    <image src = "caja_nuevo_0057.png"/>
-    <image src = "caja_nuevo_0059.png"/>
-	 <image src = "caja_nuevo_0001.png"/>
-    <image src = "caja_nuevo_0003.png"/>
-    <image src = "caja_nuevo_0005.png"/>
-    <image src = "caja_nuevo_0007.png"/>
-	 <image src = "caja_nuevo_0009.png"/>
-    <image src = "caja_nuevo_0011.png"/>
-    <image src = "caja_nuevo_0013.png"/>
+		<hotspot>
+				<button_id>der</button_id>
+				<x>480</x><y>175</y><type>big</type><tooltip>MARCO TRASERO</tooltip><content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs6.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+			</hotspot> 
+	</image>
+    <image src = "caja_nuevo_0005.png">
+	<hotspot> 
+			<button_id>izq</button_id>
+			<x>290</x><y>270</y><type>big</type><tooltip>PATINES</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs2.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>der</button_id>
+				<x>300</x><y>120</y><type>big</type><tooltip>TOLDO</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/4000dx/hs3.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>izq</button_id>
+				<x>420</x><y>170</y><type>big</type><tooltip>PANELES EXTERIORES</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs4.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>izq</button_id>
+				<x>470</x><y>260</y><type>big</type><tooltip>SUSPENSIÓN</tooltip>	<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs5.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX>	<closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>der</button_id>
+				<x>580</x><y>175</y><type>big</type><tooltip>MARCO TRASERO</tooltip><content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs6.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+			</hotspot></image>
+    <image src = "caja_nuevo_0007.png">	
+	
+		<hotspot> 
+			<button_id>izq</button_id>
+			<x>260</x><y>270</y><type>big</type><tooltip>PATINES</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs2.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>der</button_id>
+				<x>300</x><y>120</y><type>big</type><tooltip>TOLDO</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/4000dx/hs3.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>izq</button_id>
+				<x>420</x><y>170</y><type>big</type><tooltip>PANELES EXTERIORES</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs4.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>izq</button_id>
+				<x>500</x><y>260</y><type>big</type><tooltip>SUSPENSIÓN</tooltip>	<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs5.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX>	<closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>der</button_id>
+				<x>630</x><y>175</y><type>big</type><tooltip>MARCO TRASERO</tooltip><content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs6.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+			</hotspot>
+	</image>
+	<image src = "caja_nuevo_0009.png">	
+	
+		<hotspot> 
+			<button_id>der</button_id>
+			<x>160</x><y>250</y><type>big</type><tooltip>PLACA PERNO REY</tooltip>
+			<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs1.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot> 
+			<button_id>izq</button_id>
+			<x>260</x><y>270</y><type>big</type><tooltip>PATINES</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs2.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>der</button_id>
+				<x>300</x><y>120</y><type>big</type><tooltip>TOLDO</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/4000dx/hs3.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>izq</button_id>
+				<x>420</x><y>170</y><type>big</type><tooltip>PANELES EXTERIORES</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs4.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>izq</button_id>
+				<x>550</x><y>260</y><type>big</type><tooltip>SUSPENSIÓN</tooltip>	<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs5.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX>	<closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>der</button_id>
+				<x>630</x><y>175</y><type>big</type><tooltip>MARCO TRASERO</tooltip><content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs6.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+			</hotspot>
+	</image>
+    <image src = "caja_nuevo_0011.png">	
+	<hotspot> 
+			<button_id>der</button_id>
+			<x>130</x><y>250</y><type>big</type><tooltip>PLACA PERNO REY</tooltip>
+			<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs1.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot> 
+			<button_id>izq</button_id>
+			<x>260</x><y>270</y><type>big</type><tooltip>PATINES</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs2.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>der</button_id>
+				<x>300</x><y>120</y><type>big</type><tooltip>TOLDO</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/4000dx/hs3.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>izq</button_id>
+				<x>420</x><y>170</y><type>big</type><tooltip>PANELES EXTERIORES</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs4.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>izq</button_id>
+				<x>550</x><y>260</y><type>big</type><tooltip>SUSPENSIÓN</tooltip>	<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs5.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX>	<closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>der</button_id>
+				<x>630</x><y>175</y><type>big</type><tooltip>MARCO TRASERO</tooltip><content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs6.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+			</hotspot>
+	</image>
+    <image src = "caja_nuevo_0013.png">
+	<hotspot>
+			<button_id>der</button_id>
+			<x>110</x><y>250</y><type>big</type><tooltip>PLACA PERNO REY</tooltip>
+			<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs1.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+			<button_id>izq</button_id>
+			<x>260</x><y>270</y><type>big</type><tooltip>PATINES</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs2.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>der</button_id>
+				<x>300</x><y>120</y><type>big</type><tooltip>TOLDO</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/4000dx/hs3.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>izq</button_id>
+				<x>420</x><y>170</y><type>big</type><tooltip>PANELES EXTERIORES</tooltip>
+				<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs4.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>izq</button_id>
+				<x>550</x><y>260</y><type>big</type><tooltip>SUSPENSIÓN</tooltip>	<content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs5.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX>	<closeOffsetY>10</closeOffsetY></content>
+		</hotspot>
+		<hotspot>
+				<button_id>der</button_id>
+				<x>630</x><y>175</y><type>big</type><tooltip>MARCO TRASERO</tooltip><content><background_color>#FFFFFF</background_color><background_alpha>1</background_alpha><background_pattern>none</background_pattern><html>images/3000r/hs6.html</html><fadeTime>400</fadeTime><close_button_id>close</close_button_id><closeOffsetX>-30</closeOffsetX><closeOffsetY>10</closeOffsetY></content>
+			</hotspot>
+	</image>
 
 	
 	

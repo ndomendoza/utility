@@ -40,9 +40,18 @@
      
      <script type="text/javascript">
 		jQuery(document).ready(function($) {
-			var expo = new Expo360({xml:"configuration/settings.xml", where:"#viewer"});
+			
+			xmlfile="configuration/settings.xml";
+			
+			if($(window).width()<766){ //mobile
+				$("#viewer").css("zoom",0.50);
+			}
+			 
+			
+			var expo = new Expo360({xml:xmlfile, where:"#viewer"});
 		});
 	
+		
 
 	
     </script>
@@ -117,7 +126,7 @@ Do the following if you're using your customized build of modernizr (http://www.
 
 
 
-<div id="footer-page" class="fluid menuinferiorcat" style=" width:100%;position:fixed; bottom:0; left:0;">
+<div class="fluid menuinferiorcat ">
 
 <ul class="infcat " >
   <li> <a  href="cat1.html">  <img src="images/3000r.png" width="150" alt=""/> </a></li>
