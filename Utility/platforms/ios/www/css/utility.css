@@ -158,7 +158,10 @@ footer button:focus {
 	
 	}	
 	
+.despegarizq{
+	margin-left:35px;
 	
+	}	
 	
 .redondear {
 -moz-border-radius: 20px; /* Firefox */
@@ -182,6 +185,13 @@ border-radius: 20px; /* CSS3 (Opera 10.5 e Internet Explorer 9) */
 width: 100%;
 }
 
+a.primerapantalla:link,a.primerapantalla:visited { font-size: 15px}
+ 
+a.menupantallas:link,a.menupantallas:visited { font-size: 10px}
+
+.titresponsive{
+	font-size:20px
+	}
 
 .container {
   width: 92%;
@@ -200,9 +210,12 @@ width: 100%;
 }
 
 .menu {
-	width:100%;
-			
+	width:85%;
 }
+.tamatitulos{font-size:32px;
+
+margin-top:20px;
+	}
 
 .logo {
 	width:100%;
@@ -210,10 +223,10 @@ width: 100%;
 .btnmenu {
 	text-align: center;
 	float:left;
-	width:120px;
-	min-height:25px;
+	width:80px;
+	min-height:16px;
 	list-style:none;
-	padding:10px 15px;
+	padding:5px 15px;
 	background-image:url(../images/fondobtn.png);
 	background-size:100% 100%;
 	background-position:left;	
@@ -244,7 +257,7 @@ color:#FFFFFF;
 position: fixed;
 bottom: 0;
 width:100%;
-height:90px;
+height:60px;
 background-color:#00609f;
 }
 .div3000r {
@@ -324,6 +337,12 @@ color:#FFFFFF;
 	margin-left: auto;
 }
 
+a.primerapantalla:link,a.primerapantalla:visited { font-size: 25px}
+
+a.menupantallas:link,a.menupantallas:visited { font-size: 22px}
+.titresponsive{
+	font-size:30px
+	}
 
 .container {
   width: 80%;
@@ -348,10 +367,13 @@ margin-top:10%
 }
 
 .menu {
-	width:100%;
+	width:85%;
 			
 }
-
+.tamatitulos{font-size:52px;
+padding-bottom:15px;
+margin-bottom:15px;
+	}
 .logo {
 	width:100%;
 	margin-top:40px;
@@ -360,10 +382,10 @@ margin-top:10%
 	text-align: center;
 
 	float:left;
-	width:120px;
+	width:180px;
 	height:30px;
 	list-style:none;
-	padding:10px 30px;
+	padding:15px 30px;
 	background-image:url(../images/fondobtn.png);
 	background-size:100% 100%;
 	background-position:left;	
@@ -457,7 +479,7 @@ color:#FFFFFF;
 	
 	}
 
-	
+	 
 /* fin menu inf cat*/	
 
 
@@ -483,6 +505,15 @@ color:#FFFFFF;
 	float: none;
 	margin-left: auto;
 }
+
+a.primerapantalla:link,a.primerapantalla:visited { font-size: 25px}
+ 
+a.menupantallas:link,a.menupantallas:visited { font-size: 22px}
+.titresponsive{
+	font-size:30px
+	}
+
+
 #div1 {
 width: 70%;
 margin-left:15%
@@ -511,7 +542,9 @@ margin-left:15%
 	width:100%;
 			
 }
-
+.tamatitulos{font-size:52px;
+margin-bottom:15px;
+	}
 .logo {
 	width:100%;
 }

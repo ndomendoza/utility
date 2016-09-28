@@ -74,6 +74,8 @@ a.azul:focus { text-decoration:#00609f; }
 
 
 
+
+
 /* =============================================================================
    Typography
    ========================================================================== */
@@ -120,14 +122,12 @@ nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0
 li.rombo{
 	width:100%;
 	list-style:none;
-	padding:10px 30px;
+	padding:15px 30px;
 	background-image:url(../images/fondobtn.png);
 	background-size:100% 100%;
 	background-position:left;	
 	background-repeat:no-repeat
-	
-	
-		}
+			}
 
 /* =============================================================================
    Embedded content
