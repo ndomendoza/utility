@@ -58,6 +58,19 @@ pos=$( "#bottom-content" ).offset().top;
 $("#bottom-content").css("height",tamano_pagina-pos-15);
 
 
+
+
+$('#bottom-content').load(function(){
+
+        var iframe = $('#bottom-content').contents();
+
+        iframe.find("a").click(function(){
+               alert("test");
+			   event.preventDefault();
+    window.open($(this).attr('href'), '_system');
+        });
+});
+
 </script>
 </body>
 </html> 

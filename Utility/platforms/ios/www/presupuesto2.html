@@ -145,6 +145,20 @@ $(".content-page").css("height",paginatamano-tamano-10+"px");
 </script>
 <script>
 
+function alertDismissed() {
+    // do something
+}
+function mensaje(msg){
+
+
+navigator.notification.alert(
+    msg,  // message
+    alertDismissed,         // callback
+    "",            // title
+    "OK"                  // buttonName
+);	
+}
+
 		$("#enviar").click(function(){
 			if(validarFormulario()){enviarMail();}	
 		})
@@ -152,16 +166,16 @@ $(".content-page").css("height",paginatamano-tamano-10+"px");
 
 	function validarFormulario(){
 		if(esVacio("nombre")||esVacio("apellido")||esVacio("telefono")||esVacio("comentarios")){
-			alert("Por favor, completa todos los campos");	
+			mensaje("Por favor, completa todos los campos");	
 			return false;
 		}else if( !isValidEmailAddress( $("#correo").val() ) ) { 
-			alert("Por favor, revisa que tu correo electrónico esté correcto");	
+			mensaje("Por favor, revisa que tu correo electrónico esté correcto");	
 			return false;
 		 }else if(!esTelefono("telefono")){
-			alert("El Teléfono debe contener 10 dígitos si es fijo y 13 si es celular");
+			mensaje("El Teléfono debe contener 10 dígitos si es fijo y 13 si es celular");
 			return false;
 		}else if(!esClienteONo("cliente_0","cliente_1")){
-			alert("Selecciona si eres cliente o no");
+			mensaje("Selecciona si eres cliente o no");
 			return false;
 		}
 		return true;
@@ -228,11 +242,11 @@ function enviarMail(){
     xhr.setRequestHeader ("Authorization", "Basic " + btoa("api" + ":" + "key-3bf3f77adbe1e565d381115f089ff8ff"));
     },
     success: function(data) {
-        alert("Tu mensaje ha sido enviado");
+        mensaje("Tu mensaje ha sido enviado");
 		limpiar();
     },
     error: function(xhr) { // if error occured
-        alert("No se pudo enviar el correo. Intenta nuevamente");
+        mensaje("No se pudo enviar el correo. Intenta nuevamente");
 	},
     complete: function() {
         //
@@ -253,6 +267,7 @@ function enviarMail(){
 }
 
 </script>
+<script type="text/javascript" src="cordova.js"></script>
 </body>
 
 </html> 
