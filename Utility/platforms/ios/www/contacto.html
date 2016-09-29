@@ -155,8 +155,8 @@ function enviarMail(){
     type: 'POST',
     url: "https://api.mailgun.net/v3/utilityapp.ndodesign.net/messages",
     data: {
-      "from": "ventas@utility.com.mx",
-      "to": $("#correo").val(),//"ventas@utility.com.mx",
+      "from": $("#correo").val(),
+      "to": "ventas@utility.com.mx",
       "subject": "Mensaje desde app",
       "text": "Nombre: "+$("#nombre").val()+" "+$("#apellido").val()+"\nTeléfono: "+$("#telefono").val()+"\nCorreo: "+$("#correo").val()+"\n"+escliente+"\n\n"+$("#comentarios").val()
     },
