@@ -156,16 +156,16 @@ $(".content-page").css("height",paginatamano-tamano-10+"px");
 
 	function validarFormulario(){
 		if(esVacio("nombre")||esVacio("apellido")||esVacio("telefono")||esVacio("comentarios")){
-			alert("Por favor, completa todos los campos");	
+			mensaje("Por favor, completa todos los campos");	
 			return false;
 		}else if( !isValidEmailAddress( $("#correo").val() ) ) { 
-			alert("Por favor, revisa que tu correo electrónico esté correcto");	
+			mensaje("Por favor, revisa que tu correo electrónico esté correcto");	
 			return false;
 		 }else if(!esTelefono("telefono")){
-			alert("El Teléfono debe contener 10 dígitos si es fijo y 13 si es celular");
+			mensaje("El Teléfono debe contener entre 10 dígitos si es fijo y 15 si es celular");
 			return false;
 		}else if(!esClienteONo("cliente_0","cliente_1")){
-			alert("Selecciona si eres cliente o no");
+			mensaje("Selecciona si eres cliente o no");
 			return false;
 		}
 		return true;
@@ -203,7 +203,7 @@ function esTelefono(obj){
 	a=$("#"+obj).val();
 	var tel = a.replace(/[^0-9]/g, '');
 	
-	if(tel.length>=10&&tel.length<=13){
+	if(tel.length>=10&&tel.length<=15){
 		return true
 	}else{
 		return false;	
@@ -223,16 +223,16 @@ function enviarMail(){
     type: 'POST',
     url: "https://api.mailgun.net/v3/utilityapp.ndodesign.net/messages",
     data: {
-      "from": "ventas@utility.com.mx",
-      "to": $("#correo").val(),//"ventas@utility.com.mx",
-      "subject": "Mensaje desde app",
+      "from": $("#correo").val(),
+      "to": "ventas@utility.com.mx",
+      "subject": "Mensaje desde app Colombia",
       "text": "Nombre: "+$("#nombre").val()+" "+$("#apellido").val()+"\nTeléfono: "+$("#telefono").val()+"\nCorreo: "+$("#correo").val()+"\n"+escliente+"\n\n"+$("#comentarios").val()
     },
 	beforeSend: function (xhr) {
     xhr.setRequestHeader ("Authorization", "Basic " + btoa("api" + ":" + "key-3bf3f77adbe1e565d381115f089ff8ff"));
     },
     success: function(data) {
-        alert("Tu mensaje ha sido enviado");
+        mensaje("Tu mensaje ha sido enviado");
 		limpiar();
     },
     error: function(xhr) { // if error occured
@@ -256,8 +256,22 @@ function enviarMail(){
 	}
 }
 
-</script>
 
+function alertDismissed() {
+    // do something
+}
+function mensaje(msg){
+
+
+navigator.notification.alert(
+    msg,  // message
+    alertDismissed,         // callback
+    "",            // title
+    "OK"                  // buttonName
+);	
+}
+</script>
+<script type="text/javascript" src="cordova.js"></script>
 </body>
 
 </html> 

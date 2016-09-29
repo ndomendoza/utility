@@ -75,10 +75,6 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
-   // [self setNeedsStatusBarAppearanceUpdate];
-    
-
 }
 
 - (void)viewDidUnload
@@ -153,8 +149,6 @@
     return [super pathForResource:resourcepath];
 }
 
-
-
 @end
 
 @implementation MainCommandQueue
@@ -166,7 +160,5 @@
 {
     return [super execute:command];
 }
-
-
 
 @end
