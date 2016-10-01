@@ -1,0 +1,273 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Utility</title>
+<link href="css/boilerplate.css" rel="stylesheet" type="text/css">
+<link href="css/utility.css" rel="stylesheet" type="text/css">
+
+<style>
+			input,textarea{ font-family:arial; font-size:12px}
+			</style>
+<!-- fancybox -->
+
+<script type="text/javascript"  src="lib/jquery-1.10.1.min.js"></script>
+<script type="text/javascript"  src="source/jquery.fancybox.js" ></script>
+
+<link rel="stylesheet" href="source/jquery.fancybox.css" type="text/css" media="screen" />
+<script type="text/javascript" src="source/helpers/jquery.fancybox-media.js"></script>
+
+
+
+    <script type="text/javascript">
+        $(function () {
+            $('#video a').fancybox({
+				 type: 'iframe',
+				 autoplay: true,
+				
+ 
+  
+            });
+        });
+    </script>
+
+<!-- fin fancybox -->
+
+
+<!-- 
+To learn more about the conditional comments around the html tags at the top of the file:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+
+Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
+* insert the link to your js here
+* remove the link below to the html5shiv
+* add the "no-js" class to the html tags at the top
+* you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
+-->
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="js/respond.min.js"></script>
+
+ 
+
+
+</head>
+<body class="fondotrailers">
+  <div class="content-page" style="overflow:scroll; overflow-x:hidden">
+<div class="fluid logo"> 
+ 
+<table width="100%" border="0">
+  <tbody>
+    <tr>
+      <td align="left" valign="middle" scope="col"><h1 class="rojo despegarizq"><img src="images/4000dx.png" width="200" alt=""/></h1>
+        <br>
+ <a href="catalogo.html" class="azul"><div class="despegarizq" style=" vertical-align:bottom">  <img src="images/back.png" width="25" alt=""/> Regresar</div> </a>
+      
+      </td>
+      <td align="right" valign="middle" scope="col"><a href="utility.html"><img src="images/logoch.png" width="250" alt=""/></a></td>
+    </tr>
+  </tbody> 
+</table></div>
+
+<div class="fluid menu despegarizq">
+
+  <a class="menupantallas" href="ubicaciones.html" > <div class=" btnmenu">Puntos de venta </div></a>
+           
+        <a class="menupantallas" href="contacto.html"> <div class=" btnmenu">	 Contacto</div></a>
+        
+</div>
+
+
+
+<div class="fluid fomulario">
+
+
+<div class="container">
+  <header><center>
+    <h1 class="azul">Con gusto atenderemos todas tus dudas</h1>
+    </center>
+  </header>
+  <div class="name">
+    <input class="first" placeholder="Nombre" type="text" id="nombre">
+    <input class="last" placeholder="Apellido" type="text" id="apellido">
+    <input class="email" placeholder="Teléfono" type="text" id="telefono">
+  </div>
+ 
+  <div class="contact">
+    <input class="email" placeholder="Correo " type="text" id="correo">
+  </div>
+  <div class="message">
+    <textarea placeholder="Dudas, comentarios o sugerencias" id="comentarios"></textarea>
+  </div> 
+  
+   <div style="text-align:right; padding:10px; color:#858585">¿Eres cliente de Utility? <input type="radio" name="cliente" value="sí" id="cliente_0">
+           SÍ</label> / <input type="radio" name="cliente" value="no" id="cliente_1">
+           NO</label></div>
+  <footer>
+    <button id="enviar">Enviar</button>
+  </footer><br><br><br><br>
+</div>
+
+
+
+
+
+
+<!--fin de formulario-->
+</div>
+
+
+</div>
+
+
+<div id="footer-page" class="fluid menuinferiorcat" style=" width:100%;position:fixed; bottom:0; left:0;">
+
+<ul class="infcat " >
+  <li> <a class="largologo" href="cat1.html">  <img src="images/4000dx.png" width="150" alt=""/> </a></li>
+  <li class=" infcat"><a  href="3602.html">CARACTERÍSTICAS</a></li>
+  <li class="infcat"><a href="espe2.html">ESPECIFICACIONES</a></li>
+  <li class="infcat"><a href="fotos2.html">FOTOS</a></li>
+  <li class="infcatactivo"><a href="presupuesto2.html">SOLICITAR COTIZACIÓN</a></li>
+</ul>
+
+</div>
+<script>
+tamano=$("#footer-page").height();
+paginatamano=$(document).height();
+$(".content-page").css("height",paginatamano-tamano-10+"px");
+
+</script>
+<script>
+
+function alertDismissed() {
+    // do something
+}
+function mensaje(msg){
+
+
+navigator.notification.alert(
+    msg,  // message
+    alertDismissed,         // callback
+    "",            // title
+    "OK"                  // buttonName
+);	
+}
+
+		$("#enviar").click(function(){
+			if(validarFormulario()){enviarMail();}	
+		})
+
+
+	function validarFormulario(){
+		if(esVacio("nombre")||esVacio("apellido")||esVacio("telefono")||esVacio("comentarios")){
+			mensaje("Por favor, completa todos los campos");	
+			return false;
+		}else if( !isValidEmailAddress( $("#correo").val() ) ) { 
+			mensaje("Por favor, revisa que tu correo electrónico esté correcto");	
+			return false;
+		 }else if(!esTelefono("telefono")){
+			mensaje("El Teléfono debe contener 10 dígitos si es fijo y 13 si es celular");
+			return false;
+		}else if(!esClienteONo("cliente_0","cliente_1")){
+			mensaje("Selecciona si eres cliente o no");
+			return false;
+		}
+		return true;
+	}
+
+	function isValidEmailAddress(emailAddress) {
+		var pattern = /^([a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+(\.[a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+)*|"((([ \t]*\r\n)?[ \t]+)?([\x01-\x08\x0b\x0c\x0e-\x1f\x7f\x21\x23-\x5b\x5d-\x7e\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|\\[\x01-\x09\x0b\x0c\x0d-\x7f\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))*(([ \t]*\r\n)?[ \t]+)?")@(([a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.)+([a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.?$/i;
+		return pattern.test(emailAddress);
+	};
+
+	/*cliente*/
+	function esClienteONo(obj1,obj2){
+		a=$("#"+obj1);
+		b=$("#"+obj2);
+		
+		if($(a).prop("checked")||$(b).prop("checked")){
+			return true	
+		}else{
+			return false
+		}
+	}
+
+
+/*Vacios*/
+function esVacio(obj){
+	a=$("#"+obj);
+	if (a.val().trim()=="") {
+      return true
+	}
+	return false;
+}
+
+
+function esTelefono(obj){
+	a=$("#"+obj).val();
+	var tel = a.replace(/[^0-9]/g, '');
+	
+	if(tel.length>=10&&tel.length<=13){
+		return true
+	}else{
+		return false;	
+	}
+}
+
+
+
+function enviarMail(){
+	
+	escliente="No es cliente de Utility";
+	if($("#cliente_0").prop("checked")){
+		escliente="Sí es cliente de Utility";
+	}
+	
+	$.ajax({
+    type: 'POST',
+    url: "https://api.mailgun.net/v3/utilityapp.ndodesign.net/messages",
+    data: {
+      "from": $("#correo").val(),
+      "to": "ventas@utility.com.mx",
+      "subject": "Mensaje desde app",
+      "text": "Nombre: "+$("#nombre").val()+" "+$("#apellido").val()+"\nTeléfono: "+$("#telefono").val()+"\nCorreo: "+$("#correo").val()+"\n"+escliente+"\n\n"+$("#comentarios").val()
+    },
+	beforeSend: function (xhr) {
+    xhr.setRequestHeader ("Authorization", "Basic " + btoa("api" + ":" + "key-3bf3f77adbe1e565d381115f089ff8ff"));
+    },
+    success: function(data) {
+        mensaje("Tu mensaje ha sido enviado");
+		limpiar();
+    },
+    error: function(xhr) { // if error occured
+        mensaje("No se pudo enviar el correo. Intenta nuevamente");
+	},
+    complete: function() {
+        //
+    },
+    dataType: 'json'
+});
+	
+	
+	function limpiar(){
+		$("#nombre").val("");
+		$("#apellido").val("");
+		$("#telefono").val("");
+		$("#correo").val("");
+		$("#comentarios").val("");
+		$("#cliente_0").prop("checked",false);
+		$("#cliente_1").prop("checked",false);
+	}
+}
+
+</script>
+<script type="text/javascript" src="cordova.js"></script>
+</body>
+
+</html> 
