@@ -45,6 +45,9 @@
 			
 			if($(window).width()<766){ //mobile
 				$("#viewer").css("zoom",0.50);
+				$("#viewer iframe").css("-webkit-transform","translate3d(0,0,0)");
+				$("iframe").css("-webkit-overflow-scrolling","touch !important");
+				
 			}
 			 
 			
@@ -116,7 +119,7 @@ Do the following if you're using your customized build of modernizr (http://www.
 
 
 
-<div id="viewer" style="margin:auto;text-align:center;max-width:700px"></div>
+<div id="viewer" style="margin:auto;text-align:center;max-width:700px;-webkit-overflow-scrolling:touch"></div>
 
 
 
