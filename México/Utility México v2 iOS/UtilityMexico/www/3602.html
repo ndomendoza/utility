@@ -1,0 +1,126 @@
+<!doctype html>
+<html class="">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Utility</title>
+<link href="css/boilerplate.css" rel="stylesheet" type="text/css">
+<link href="css/utility.css" rel="stylesheet" type="text/css">
+
+
+<!-- fancybox -->
+
+<script type="text/javascript"  src="lib/jquery-1.10.1.min.js"></script>
+<script type="text/javascript"  src="source/jquery.fancybox.js" ></script>
+
+<link rel="stylesheet" href="source/jquery.fancybox.css" type="text/css" media="screen" />
+<script type="text/javascript" src="source/helpers/jquery.fancybox-media.js"></script>
+
+
+
+ 
+
+<!-- fin fancybox -->
+
+
+<!-- inicio de 360 -->
+
+     <script type="text/javascript" src="js/libraries/jquery.js"></script>
+     <script type="text/javascript" src="js/libraries/jquery.mobile.vmouse.js"></script> 
+     <script type="text/javascript" src="js/libraries/jquery.mousewheel.min.js"></script> 
+     
+     <script type="text/javascript" src="js/pngFixer.js"></script>
+     <script type="text/javascript" src="js/buttons.js"></script>
+     
+     <script type="text/javascript" src="js/Expo360.js"></script>
+     
+     <script type="text/javascript">
+		jQuery(document).ready(function($) {
+			
+			xmlfile="configuration/settings2.xml";
+			
+			if($(window).width()<766){ //mobile
+				$("#viewer").css("zoom",0.50);
+			}
+			 
+			
+			var expo = new Expo360({xml:xmlfile, where:"#viewer"});
+		});
+	
+		
+	
+
+	
+    </script>
+    
+
+<!-- fin de 360 -->
+
+
+<script src="js/respond.min.js"></script>
+
+ 
+
+
+</head>
+<body class="fondotrailers">
+
+<div class="fluid logo"> 
+ 
+<table width="100%" border="0">
+  <tbody>
+    <tr>
+      <td align="left" valign="middle" scope="col"><h1 class="rojo despegarizq"><img src="images/4000dx.png" width="200" alt=""/></h1>
+        <br>
+ <a href="catalogo.html" class="azul"><div class="despegarizq" style=" vertical-align:bottom">  <img src="images/back.png" width="25" alt=""/> Regresar</div> </a>
+      
+      </td>
+      <td align="right" valign="middle" scope="col"><a href="utility.html"><img src="images/logoch.png" width="250" alt=""/></a></td>
+    </tr>
+  </tbody> 
+</table></div>
+
+<div class="fluid menu despegarizq">
+
+  <a class="menupantallas" href="refacciones.html"> <div class=" btnmenu">	 Refacciones</div></a>
+        <a class="menupantallas" href="usados.html"> <div class=" btnmenu">	 Usados</div></a>
+  <a class="menupantallas" href="ubicaciones.html" > <div class=" btnmenu">Ubicaciones </div></a>
+                             
+        <a class="menupantallas" href="contacto.html"> <div class=" btnmenu">	 Contacto</div></a>
+       
+</div>
+
+
+
+<div class="fluid div3000r redondear">
+
+
+<div style="right:0; margin-right:80px; text-align:right"><img src="images/360.png" height="50"  alt=""/></div>
+
+
+<div id="viewer" style="margin:auto;text-align:center;max-width:700px"></div>
+
+
+ 
+</div>
+
+
+
+
+
+<div class="fluid menuinferiorcat ">
+
+<ul class="infcat " >
+  <li> <a class="largologo"  href="cat1.html">  <img src="images/4000dx.png" width="150" alt=""/> </a></li>
+  <li class=" infcatactivo "><a  href="3602.html">CARACTERÍSTICAS</a></li>
+  <li class="infcat"><a href="espe2.html">ESPECIFICACIONES</a></li>
+  <li class="infcat"><a href="fotos2.html">FOTOS</a></li>
+  <li class="infcat"><a href="presupuesto2.html">SOLICITAR COTIZACIÓN</a></li>
+</ul>
+
+</div>
+
+
+</body>
+
+</html> 

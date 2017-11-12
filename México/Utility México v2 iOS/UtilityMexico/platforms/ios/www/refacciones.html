@@ -1,0 +1,1379 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="">
+<!--<![endif]--><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Utility</title>
+<link href="css/boilerplate.css" rel="stylesheet" type="text/css">
+<link href="css/utility.css" rel="stylesheet" type="text/css">
+
+
+<!-- fancybox -->
+
+<script type="text/javascript"  src="lib/jquery-1.10.1.min.js"></script>
+<script type="text/javascript"  src="source/jquery.fancybox.js" ></script>
+<!--Mansory -->
+ <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/multipleFilterMasonry.js"></script>
+
+<link rel="stylesheet" href="source/jquery.fancybox.css" type="text/css" media="screen" />
+<script type="text/javascript" src="source/helpers/jquery.fancybox-media.js"></script>
+
+
+
+
+
+    <script type="text/javascript">
+        $(function () {
+            $('#video a').fancybox({
+				 type: 'iframe',
+				 autoplay: true,
+            });
+        });
+		
+		  $(function () {
+            $('#catframe a').fancybox({
+				 type: 'iframe',
+				
+            });
+        });
+		
+		
+		
+		
+		$(document).ready(function() {
+
+	/* This is basic - uses default settings */
+	
+	$("a#single_image").fancybox();
+	
+	/* Using custom settings */
+	
+	/* Apply fancybox to multiple items */
+	
+	$("a.group").fancybox({
+		'transitionIn'	:	'elastic',
+		'transitionOut'	:	'elastic',
+		'speedIn'		:	600, 
+		'speedOut'		:	200, 
+		'overlayShow'	:	false
+	});
+	
+});
+
+
+
+//Change title position; show overlay after content has loaded
+$(".fancybox").fancybox({
+    helpers:  {
+        title : {
+            type : 'inside'
+        },
+        overlay : {
+            showEarly : false
+        }
+    }
+});
+
+
+
+
+// initialize Masonry
+    var $container = $('#masonryContainer');
+
+    $container.multipleFilterMasonry({
+      itemSelector: '.challenge',
+      filtersGroupSelector:'.filters'
+    });
+
+    </script>
+
+<!-- fin fancybox -->
+
+
+<!-- 
+To learn more about the conditional comments around the html tags at the top of the file:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+
+Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
+* insert the link to your js here
+* remove the link below to the html5shiv
+* add the "no-js" class to the html tags at the top
+* you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build 
+-->
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="js/respond.min.js"></script>
+
+
+
+</head>
+<body class="fondotrailers">
+<div class="content-page" style=" height:100px; overflow:scroll; overflow-x:hidden;">
+
+<div class="fluid logo"> 
+ 
+<table width="100%" border="0">
+  <tbody>
+    <tr>
+      <td align="left" valign="middle" scope="col"><h1 class="rojo despegarizq"><img src="images/refacciones.png" width="200" alt=""/></h1>
+       
+ <a href="catalogo.html" class="azul"><div class="despegarizq" style="vertical-align:bottom">  <img src="images/back.png" width="25" alt=""/> Regresar</div> </a>
+      
+      </td>
+      <td align="right" valign="middle" scope="col"><a href="utility.html"><img src="images/logoch.png" width="250" alt=""/></a></td>
+    </tr>
+  </tbody>
+</table></div>
+
+<div class="fluid menu despegarizq">
+
+  <a class="menupantallas" href="refacciones.html"> <div class=" btnmenu">	 Refacciones</div></a>
+        <a class="menupantallas" href="usados.html"> <div class=" btnmenu">	 Usados</div></a>
+  <a class="menupantallas" href="ubicaciones.html" > <div class=" btnmenu">Ubicaciones </div></a>
+                             
+        <a class="menupantallas" href="contacto.html"> <div class=" btnmenu">	 Contacto</div></a>
+       
+</div>
+ <div style="max-width:450px" >
+ </div>
+
+
+<div class="fluid div3000r redondear">
+  <h1 class="titresponsive">Nuestro compromiso es que tus unidades jamás se detengan</h1>
+  <div class="gris">
+      <p> Si no encuentra lo que busca, pregunte a uno de nuestros asesores </p>
+      </div>
+      
+      
+      <!-- filtrar por categorias
+  <div class="btn-toolbar filters">
+      <div data-toggle="buttons" class="btn-group">
+        <label class="btn btn-default">
+          <input type="checkbox" value="Matematica" >
+          Matematica
+        </label>
+        <label class="btn btn-default">
+          <input type="checkbox" value="Scienza" >
+          Scienza
+        </label>
+        <label class="btn btn-default">
+          <input type="checkbox" value="Letteratura" >
+          Letteratura
+        </label>
+      </div>
+      <div data-toggle="buttons" class="btn-group">
+        <label class="btn btn-default">
+          <input type="checkbox" value="mine" >
+          Mine
+        </label>
+      </div>
+    </div>    
+      -->
+      
+      <div id="masonryContainer" class="row" >
+      
+      <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+      <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+      Ganchos y argollas 
+</h1><br>
+<div class='azul'>
+
+De acuerdo a sus necesidades le ofrecemos diferentes tipos de argollas y  ganchos de arrastre que le brindan una  gran resistencia y durabilidad.
+
+</div>
+" href="images/catalogo/38.jpg">
+      <img class="redondear"  src="images/catalogo/38.jpg"  width="100%"  alt=""/>
+      <h3> Ganchos y argollas 
+ </h3> 
+      </a>
+      </div>
+      
+     
+     
+       <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+      <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+      Componentes para Dolly 
+</h1><br>
+<div class='azul'>
+
+Diferentes componentes para dolly tipo A y tipo H, para servicio y fabricación 
+
+</div>
+" href="images/catalogo/39.jpg">
+      <img class="redondear"  src="images/catalogo/39.jpg"  width="100%"  alt=""/>
+      <h3> Componentes para Dolly  
+ </h3> 
+      </a>
+      </div> 
+     <!--inicio-->
+     <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+      <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+      Rieles logísticos
+</h1><br>
+<div class='azul'>
+
+Maximice el espacio en su semirremolque utilizando rieles logísticos  galvanizados o pintados así como  sistemas captivos.
+
+
+</div>
+" href="images/catalogo/40.jpg">
+      <img class="redondear"  src="images/catalogo/40.jpg"  width="100%"  alt=""/>
+      <h3> Rieles logísticos 
+ </h3> 
+      </a>
+      </div>
+      <!-- fin-->
+      <!--inicio-->
+     <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+      <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+      Bandas tensoras 
+</h1><br>
+<div class='azul'>
+Mantenga  su carga segura y libre de desplazamientos con las bandas tensoras  fabricadas en poliéster de alta resistencia especialmente  y disponibles en diferentes medidas.
+
+</div>
+" href="images/catalogo/41.jpg">
+      <img class="redondear"  src="images/catalogo/41.jpg"  width="100%"  alt=""/>
+      <h3> Bandas tensoras 
+ </h3> 
+      </a>
+      </div>
+      <!-- fin-->
+        <!-- items____________________________________________________________________________________________________________________ -->
+     <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+      <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+        Cadenas 
+</h1><br>
+<div class='azul'>
+  Cadenas de seguridad para dolly o control  de carga,  grado 70  en acero de alta resistencia en diferentes medidas y longitudes.
+  Cumplen con las NOM 012 Y 035 de la SCT. 
+</div>
+" href="images/catalogo/42.jpg">
+      <img class="redondear" src="images/catalogo/42.jpg"  width="100%" alt=""/>
+      <h3> Cadenas 
+ </h3> 
+      </a>
+      </div>
+      <!-- items____________________________________________________________________________________________________________________ -->
+       
+     <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+      <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+        Sistema para control de carga        
+</h1><br>
+<div class='azul'>
+  sistema logístico como barra detenedora de carga, poste logístico, barra captiva y redes.  
+</div>
+" href="images/catalogo/43.jpg">
+      <img class="redondear"  src="images/catalogo/43.jpg"  width="100%"  alt=""/>
+      <h3> Sistema para control de carga
+        
+ </h3> 
+      </a>
+      </div>
+      <!-- items____________________________________________________________________________________________________________________ -->
+      
+      <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+        <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+          Control de carga exterior       
+  </h1><br>
+  <div class='azul'>
+    Diferentes componentes para sujeción de carga para plataforma.
+    
+  </div>
+  " href="images/catalogo/44.jpg">
+        <img class="redondear"  src="images/catalogo/44.jpg"  width="100%"  alt=""/>
+        <h3> Control de carga exterior 
+          
+   </h3> 
+        </a>
+        </div>
+        <!-- items____________________________________________________________________________________________________________________ -->
+        <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+          <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+            Dispositivo difusor de aire      
+    </h1><br>
+    <div class='azul'>
+      Disponible lona shute en longitud de 35, 43 y 45 ft. Ideal para la correcta dispersión de temperatura a largo de su unidad con ojillos para el marco de aluminio.       
+      
+    </div>
+    " href="images/catalogo/45.jpg">
+          <img class="redondear" src="images/catalogo/45.jpg"  width="100%"  alt=""/>
+          <h3> Dispositivo difusor de aire 
+            
+     </h3> 
+          </a>
+          </div>
+          <!-- items____________________________________________________________________________________________________________________ -->
+          <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+            <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+              Iluminación y sistema eléctrico
+              
+      </h1><br>
+      <div class='azul'>
+        Cumple con la NOM 035 adquiriendo los plafones de navegación, ubicación y stop de venta en Utility.
+        
+        
+      </div>
+      " href="images/catalogo/46.jpg">
+            <img class="redondear" src="images/catalogo/46.jpg"  width="100%"  alt=""/>
+            <h3> Iluminación y sistema eléctrico
+      </h3> 
+            </a>
+            </div>
+            <!-- items____________________________________________________________________________________________________________________ -->
+            <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+              <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+                Tornillo y remaches 
+                
+                
+        </h1><br>
+        <div class='azul'>
+          Variedad de remaches de golpe de aluminio duro, cabeza plana o de gota para diferentes aplicaciones y tornillos  autorroscantes para fijación de tablones de pisos.
+          
+          
+        </div>
+        " href="images/catalogo/47.jpg">
+              <img class="redondear"  src="images/catalogo/47.jpg"  width="100%"  alt=""/>
+              <h3> Tornillo y remaches 
+        </h3> 
+              </a>
+              </div>
+              <!-- items____________________________________________________________________________________________________________________ -->
+              <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+                <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+                  Componentes para uso y servicios de sistema eléctrico y neumático. 
+                  
+                  
+                  
+          </h1><br>
+          <div class='azul'>
+            Manitas y mangueras rojas y azules que mantienen un flujo de aire afectivo en el sistema.
+          </div>
+          " href="images/catalogo/48.jpg">
+                <img class="redondear" src="images/catalogo/48.jpg"  width="100%"  alt=""/>
+                <h3> Componentes para uso y servicios de sistema eléctrico y neumático. 
+                  
+          </h3> 
+                </a>
+                </div>
+                <!-- items____________________________________________________________________________________________________________________ -->
+                <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+                  <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+                    Cintas Adhesivas 
+           </h1><br>
+            <div class='azul'>
+              Cinta reparadora para toldo de aluminio de 4” de ancho, 
+              Cinta doblecara beneficia la adherencia entre piezas metálicas 
+              Cinta  antielectrólisis evita la contaminación y corroción entre las uniones 
+              
+            </div>
+            " href="images/catalogo/49.jpg">
+                  <img class="redondear" src="images/catalogo/49.jpg"  width="100%"  alt=""/>
+                  <h3> Cintas Adhesivas 
+            </h3> 
+                  </a>
+                  </div>
+                  <!-- items____________________________________________________________________________________________________________________ -->
+                  
+                    <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+                      <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+                        Cinta reflejante
+               </h1><br>
+                <div class='azul'>
+                  Disponible en rollo de 150ft  y blíster de 6 tiras para cumplir con la NOM 035 obtenga mayor visibilidad de tus unidades en cualquier clima, incluso  con luz de día y de noche.
+                  
+                  
+                </div>
+                " href="images/catalogo/50.jpg">
+                      <img class="redondear"  src="images/catalogo/50.jpg"  width="100%"  alt=""/>
+                      <h3> Cinta reflejante 
+                </h3> 
+                      </a>
+                      </div>
+                      <!-- items____________________________________________________________________________________________________________________ -->
+                      <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+                        <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+                          Esquineros 
+                 </h1><br>
+                  <div class='azul'>
+                    Fabricado en aluminio para diferentes marcas y radios.
+                    Forros de aluminio o acero inoxidable de acuerdo a la marca de la unidad.                 
+                  </div>
+                  " href="images/catalogo/51.jpg">
+                        <img class="redondear" src="images/catalogo/51.jpg"  width="100%"  alt=""/>
+                        <h3> Esquineros 
+                  </h3> 
+                        </a>
+                        </div>
+                        <!-- items____________________________________________________________________________________________________________________ -->
+
+                        <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+                          <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+                            Puertas ventilas
+                            
+                   </h1><br>
+                    <div class='azul'>
+                      Para caja seca o refrigerada diseño tipo rejilla, frontal o trasera, disponibles en aluminio o acero inoxidable.
+                      
+                    </div>
+                    " href="images/catalogo/52.jpg">
+                          <img class="redondear"  src="images/catalogo/52.jpg"  width="100%"  alt=""/>
+                          <h3> Puertas ventilas
+                            
+                    </h3> 
+                          </a>
+                          </div>
+                          <!-- items____________________________________________________________________________________________________________________ -->
+                          <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+                            <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+                              Componentes para frenos 
+                              
+                              
+                     </h1><br>
+                      <div class='azul'>
+                        Blocks de diferentes formulaciones.   
+                        Válvulas para abs.
+                        Rotochamber sellado doble cámara (30-30).
+                        KIt de servicio para gavilán.
+                        
+                      </div>
+                      " href="images/catalogo/53.jpg">
+                            <img class="redondear"  src="images/catalogo/53.jpg"  width="100%"  alt=""/>
+                            <h3> Componentes para frenos 
+                              
+                              
+                      </h3> 
+                            </a>
+                            </div>
+                            <!-- items____________________________________________________________________________________________________________________ -->
+
+                            <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+                              <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+                                Topes de andén
+                       </h1><br>
+                        <div class='azul'>
+                          De hule negro en diferentes medidas y para diferentes marcas de remolque.
+                        </div>
+                        " href="images/catalogo/54.jpg">
+                              <img class="redondear"  src="images/catalogo/54.jpg"  width="100%"  alt=""/>
+                              <h3> Topes de andén </h3> 
+                              </a>
+                              </div>
+                              <!-- items____________________________________________________________________________________________________________________ -->
+                              <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+                                <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+                                  Hubodometro
+                         </h1><br>
+                          <div class='azul'>
+                            
+                            Mantén el control de los kilómetros que recorren sus unidades, programados de acuerdo a la medida de la llanta y disponible tanto análogos y digitales.
+                            
+                          </div>
+                          " href="images/catalogo/55.jpg">
+                                <img class="redondear"  src="images/catalogo/55.jpg"  width="100%"  alt=""/>
+                                <h3> Hubodometro </h3> 
+                                </a>
+                                </div>
+                                <!-- items____________________________________________________________________________________________________________________ -->
+
+                                <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+                                  <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+                                    Bolsa de aire
+                           </h1><br>
+                            <div class='azul'>
+                              
+                              Para sistema de eje retráctil y suspensiones 
+                              
+                            </div>
+                            " href="images/catalogo/56.jpg">
+                                  <img class="redondear"  src="images/catalogo/56.jpg"  width="100%"  alt=""/>
+                                  <h3> Bolsa de aire </h3> 
+                                  </a>
+                                  </div>
+                                  <!-- items____________________________________________________________________________________________________________________ -->
+
+
+                                <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+                                  <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+                                    Salpicaderas
+                           </h1><br>
+                            <div class='azul'>
+                              
+                              Delanteras y traseras de aluminio de 1, 2 o 3 ejes.
+                              
+                              
+                            </div>
+                            " href="images/catalogo/57.jpg">
+                                  <img class="redondear"  src="images/catalogo/57.jpg"  width="100%"  alt=""/>
+                                  <h3> Salpicaderas </h3> 
+                                  </a>
+                                  </div>
+                                  <!-- items____________________________________________________________________________________________________________________ -->
+                                  <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+                                    <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+                                      Defensa Lateral
+                                      
+                             </h1><br>
+                              <div class='azul'>
+                                Cumpla con la NOM 035, las defensas son fabricadas con material anticorrosivo para diferentes longitudes de remolques. 
+                              </div>
+                              " href="images/catalogo/58.jpg">
+                                    <img class="redondear"  src="images/catalogo/58.jpg"  width="100%"  alt=""/>
+                                    <h3> Defensa Lateral
+                                    </h3> 
+                                    </a>
+                                    </div>
+                                    <!-- items____________________________________________________________________________________________________________________ -->
+          <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+                                    <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+                                      Mampara
+                             </h1><br>
+                              <div class='azul'>
+                                Mampara térmica con características especiales de acuerdo a sus necesidades como dobleces, cinturones de fijación con o sin ventilador. 
+                              </div>
+                              " href="images/catalogo/59.jpg">
+                                    <img class="redondear"  src="images/catalogo/59.jpg"  width="100%"  alt=""/>
+                                    <h3> Mampara
+                                    </h3> 
+                                    </a>
+                                    </div>
+                                    <!-- items____________________________________________________________________________________________________________________ -->
+                                    <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+                                      <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+                                        Componentes para suspensión 
+                                        
+                               </h1><br>
+                                <div class='azul'>
+                                  Variedad de componentes en marca hendrickson para servicio y mantenimiento de suspensión.
+                                  
+                                </div>
+                                " href="images/catalogo/60.jpg">
+                                      <img class="redondear"  src="images/catalogo/60.jpg"  width="100%"  alt=""/>
+                                      <h3> Componentes para suspensión 
+                                        
+                                      </h3> 
+                                      </a>
+                                      </div>
+                                      <!-- items____________________________________________________________________________________________________________________ -->
+                                      <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+                                        <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+                                          Seguro de caja para contenedor marítimo.
+                                          
+                                          
+                                 </h1><br>
+                                  <div class='azul'>
+                                    
+                                  </div>
+                                  " href="images/catalogo/61.jpg">
+                                        <img class="redondear"  src="images/catalogo/61.jpg"  width="100%"  alt=""/>
+                                        <h3> Seguro de caja para contenedor marítimo.
+                                          
+                                          
+                                        </h3> 
+                                        </a>
+                                        </div>
+                                        <!-- items____________________________________________________________________________________________________________________ -->
+                                        <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+                                          <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+                                            Accesorios para puerta cortina <br>
+                                           
+                                            
+                                   </h1><br>
+                                    <div class='azul'> 
+                                      
+                                            Bisagras laterales, centrales y finales  de acero galvanizado<br>
+                                            roller de 1” y 2” en acero y nylon<br>
+                                            cable tensor de acero galvanizado<br>
+                                            sellos laterales de hule color gris<br>
+                                    </div>
+                                    " href="images/catalogo/62.jpg">
+                                          <img class="redondear"  src="images/catalogo/62.jpg"  width="100%"  alt=""/>
+                                          <h3> Accesorios para puerta cortina
+                                            
+                                            
+                                            
+                                          </h3> 
+                                          </a>
+                                          </div>
+                                          <!-- items____________________________________________________________________________________________________________________ -->
+
+                                          <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+                                            <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+                                              Componentes para puerta abatible.
+                                              
+                                              
+                                     </h1><br>
+                                      <div class='azul'>
+                                        Bisagras en acero y aluminio en diferentes  medidas para cualquier tipo de remolque<br>
+                                        albardones de acero inoxidable de 3” y 4”<br>
+                                        gancho de sujeción en acero zincado.<br>
+                                        tornillos tipo neck y kit de cerrojos de acero galvanizado<br>
+                                        gancho de sujeción en acero zincado <br>
+                                        
+                                      </div>
+                                      " href="images/catalogo/63.jpg">
+                                            <img class="redondear"  src="images/catalogo/63.jpg"  width="100%"  alt=""/>
+                                            <h3> Componentes para puerta abatible.
+                                              
+                                              
+                                            </h3> 
+                                            </a>
+                                            </div>
+                                            <!-- items____________________________________________________________________________________________________________________ -->
+                                            <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+                                              <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+                                                Componentes para patines.
+                                                
+                                                
+                                       </h1><br>
+                                        <div class='azul'>
+                                          Kit de manivela,  zapatas y pernos  
+                                          
+                                          
+                                        </div>
+                                        " href="images/catalogo/64.jpg">
+                                              <img class="redondear"  src="images/catalogo/64.jpg"  width="100%"  alt=""/>
+                                              <h3> Componentes para patines.
+                                                
+                                                
+                                              </h3> 
+                                              </a>
+                                              </div>
+                                              <!-- items____________________________________________________________________________________________________________________ -->
+                                              <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+                                                <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+                                                  Pernos y válvulas para eje retráctil y desplazamiento de suspensión
+                                                  
+                                                  
+                                         </h1><br>
+                                          <div class='azul'>
+                                            Pernos y válvulas para eje retráctil y desplazamiento de suspensión                                            
+                                            
+                                            
+                                          </div>
+                                          " href="images/catalogo/65.jpg">
+                                                <img class="redondear"  src="images/catalogo/65.jpg"  width="100%"  alt=""/>
+                                                <h3> Pernos y válvulas para eje retráctil y desplazamiento de suspensión
+                                                  
+                                                  
+                                                </h3> 
+                                                </a>
+                                                </div>
+                                                <!-- items____________________________________________________________________________________________________________________ -->
+                                                <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+                                                <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+                                                  Servicio de tornillería
+                                                  
+                                                  
+                                         </h1><br>
+                                          <div class='azul'>
+                                            Servicio de tornillería                                          
+                                            
+                                            
+                                          </div>
+                                          " href="images/catalogo/66.jpg">
+                                                <img class="redondear"  src="images/catalogo/66.jpg"  width="100%"  alt=""/>
+                                                <h3> Servicio de tornillería
+                                                  
+                                                  
+                                                </h3> 
+                                                </a>
+                                                </div>
+                                                <!-- items____________________________________________________________________________________________________________________ -->
+
+<div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+                                                <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+                                                  Bombas y motores para equipo hidráulico móvil.
+                                                  
+                                                  
+                                         </h1><br>
+                                          <div class='azul'>
+                                                                                 
+                                            
+                                            
+                                          </div>
+                                          " href="images/catalogo/68.jpg">
+                                                <img class="redondear"  src="images/catalogo/68.jpg"  width="100%"  alt=""/>
+                                                <h3> Bombas y motores para equipo hidráulico móvil.
+                                                  
+                                                  
+                                                </h3> 
+                                                </a>
+                                                </div>
+                                                <!-- items____________________________________________________________________________________________________________________ -->
+                                                
+                                                
+<div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+                                                <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+                                                  Mazas y tapas para ejes de espiga cónica o espiga recta.
+                                                  
+                                         </h1><br>
+                                          <div class='azul'>
+                                                                                 
+                                            
+                                            
+                                          </div>
+                                          " href="images/catalogo/69.jpg">
+                                                <img class="redondear"  src="images/catalogo/69.jpg"  width="100%"  alt=""/>
+                                                <h3> Mazas y tapas para ejes de espiga cónica o espiga recta.
+
+                                                  
+                                                  
+                                                </h3> 
+                                                </a>
+                                                </div>
+                                                <!-- items____________________________________________________________________________________________________________________ -->
+                                                
+                                                <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+                                                <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+                                                  Válvulas y arnés para sistemas ABS.
+                                                  </h1><br>
+                                          <div class='azul'>
+                                                                                 
+                                            
+                                            
+                                          </div>
+                                          " href="images/catalogo/70.jpg">
+                                                <img class="redondear"  src="images/catalogo/70.jpg"  width="100%"  alt=""/>
+                                                <h3> Válvulas y arnés para sistemas ABS.
+                                                </h3> 
+                                                </a>
+                                                </div>
+                                                <!-- items____________________________________________________________________________________________________________________ -->
+                                                         <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+                                                <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+                                                  Válvulas y arnés para sistemas ABS.
+                                                  </h1><br>
+                                          <div class='azul'>
+                                                                                 
+                                            
+                                            
+                                          </div>
+                                          " href="images/catalogo/70.jpg">
+                                                <img class="redondear"  src="images/catalogo/70.jpg"  width="100%"  alt=""/>
+                                                <h3> Válvulas y arnés para sistemas ABS.
+                                                </h3> 
+                                                </a>
+                                                </div>
+                                                <!-- items____________________________________________________________________________________________________________________ -->
+                                                   <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+                                                <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+                                                  Accesorios.
+                                                  </h1><br>
+                                          <div class='azul'>
+                                               Loderas con logo Utility  
+Calcomanías logo utility
+Portadocumentos tamaño carta de aluminio
+Rombo portaseñal de aluminio con broche 
+                               
+                                            
+                                            
+                                          </div>
+                                          " href="images/catalogo/71.jpg">
+                                                <img class="redondear"  src="images/catalogo/71.jpg"  width="100%"  alt=""/>
+                                                <h3> Accesorios.
+                                                </h3> 
+                                                </a>
+                                                </div>
+                                                <!-- items____________________________________________________________________________________________________________________ -->
+                                                        <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+                                                <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+                                                 Adhesivos y selladores
+
+                                                  </h1><br>
+                                          <div class='azul'>
+                                           Disponible en dos presentaciones,  cartucho rígido de 300ml y tubo flexible de 600ml para diferentes aplicaciones. 
+
+                                            
+                                            
+                                          </div>
+                                          " href="images/catalogo/72.jpg">
+                                                <img class="redondear"  src="images/catalogo/72.jpg"  width="100%"  alt=""/>
+                                                <h3> Adhesivos y selladores
+
+                                                </h3> 
+                                                </a>
+                                                </div>
+                                                <!-- items____________________________________________________________________________________________________________________ -->
+                                                 <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+                                                <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+                                                 Tambores
+
+                                                  </h1><br>
+                                          <div class='azul'>
+                                           Balanceados 16.5x7 unimont 
+                                            
+                                          </div>
+                                          " href="images/catalogo/73.jpg">
+                                                <img class="redondear"  src="images/catalogo/73.jpg"  width="100%"  alt=""/>
+                                                <h3> Tambores
+
+                                                </h3> 
+                                                </a>
+                                                </div>
+                                                <!-- items____________________________________________________________________________________________________________________ -->
+                                                    <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+                                                <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+                                                 Perno rey
+
+                                                  </h1><br>
+                                          <div class='azul'>
+                                           De  alta resistencia, diseñados con propiedades metalúrgicas de excelente solides y resistencia a altos impactos.
+
+                                            
+                                          </div>
+                                          " href="images/catalogo/74.jpg">
+                                                <img class="redondear"  src="images/catalogo/74.jpg"  width="100%"  alt=""/>
+                                                <h3> Perno rey
+
+                                                </h3> 
+                                                </a>
+                                                </div>
+                                                <!-- items____________________________________________________________________________________________________________________ -->
+                                                     <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+                                                <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+                                                Kit de muelas para reparación de quinta rueda.
+
+                                                  </h1><br>
+                                          <div class='azul'>
+                                           
+                                            
+                                          </div>
+                                          " href="images/catalogo/75.jpg">
+                                                <img class="redondear"  src="images/catalogo/75.jpg"  width="100%"  alt=""/>
+                                                <h3> Kit de muelas para reparación de quinta rueda.
+
+                                                </h3> 
+                                                </a>
+                                                </div>
+                                                <!-- items____________________________________________________________________________________________________________________ -->
+                                                     <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+                                                <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+                                                Bordas frontales
+                                                
+                                                  </h1><br>
+                                          <div class='azul'>
+                                           
+                                            En Utility encontrará bordas, no importando la marca de su semirremolque.
+
+                                          </div>
+                                          " href="images/catalogo/76.jpg">
+                                                <img class="redondear"  src="images/catalogo/76.jpg"  width="100%"  alt=""/>
+                                                <h3> Bordas frontales.
+
+                                                </h3> 
+                                                </a>
+                                                </div>
+                                                <!-- items____________________________________________________________________________________________________________________ -->
+                                                <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+                                                <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+                                               Componentes para encortinado
+                                                
+                                                  </h1><br>
+                                          <div class='azul'>
+                                           
+                                           Botaguas, lona o cortina en varios colores con protección UV.
+broches, rollers, caja tensora, bronces, tubo con muesca, perfil de gancho.
+
+
+                                          </div>
+                                          " href="images/catalogo/77.jpg">
+                                                <img class="redondear"  src="images/catalogo/77.jpg"  width="100%"  alt=""/>
+                                                <h3> Componentes para encortinado
+
+                                                </h3> 
+                                                </a>
+                                                </div>
+                                                <!-- items____________________________________________________________________________________________________________________ -->
+                                                    <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+                                                <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+                                              Sistema de autoinflado
+
+                                                
+                                                  </h1><br>
+                                          <div class='azul'>
+                                           
+                                          Componentes para instalación o servicio del sistema.
+
+                                          </div>
+                                          " href="images/catalogo/78.jpg">
+                                                <img class="redondear"  src="images/catalogo/78.jpg"  width="100%"  alt=""/>
+                                                <h3> Sistema de autoinflado
+  </h3>  </a> </div>
+                                                <!-- items____________________________________________________________________________________________________________________ -->
+                                                    <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+                                                <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+                                            Rines
+
+                                                
+                                                  </h1><br>
+                                          <div class='azul'>
+                                           
+                                         De acero de 2 o 5 ventilas, de aluminio pulido interior y exterior para diferentes capacidades de carga tipo unimont.
+
+                                          </div>
+                                          " href="images/catalogo/79.jpg">
+                                                <img class="redondear"  src="images/catalogo/79.jpg"  width="100%"  alt=""/>
+                                                <h3> Rines
+  </h3>  </a> </div>
+                                                <!-- items____________________________________________________________________________________________________________________ -->
+                                                
+                                                   <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+                                                <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+                                            Porta llanta
+
+                                                
+                                                  </h1><br>
+                                          <div class='azul'>
+                                           
+                                        Incremente la productividad de tu negocio llevando una llanta de refacción para evitar retrasos mayores en caso de ponchaduras.
+
+                                          </div>
+                                          " href="images/catalogo/80.jpg">
+                                                <img class="redondear"  src="images/catalogo/80.jpg"  width="100%"  alt=""/>
+                                                <h3> Porta llanta
+  </h3>  </a> </div>
+                                                <!-- items____________________________________________________________________________________________________________________ -->
+                                                                 
+                                                   <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+                                                <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+                                           Patines montaje interior y exterior 
+
+                                                
+                                                  </h1><br>
+                                          <div class='azul'>
+                                           
+                                       En acero de alta resistencia, capacidad de carga estática de 160,000 lbs, lubricados completamente en su tren de aterrizaje y sistema de accionamiento interno.
+
+                                          </div>
+                                          " href="images/catalogo/81.jpg">
+                                                <img class="redondear"  src="images/catalogo/81.jpg"  width="100%"  alt=""/>
+                                                <h3> Patines montaje interior y exterior 
+  </h3>  </a> </div>
+                                                <!-- items____________________________________________________________________________________________________________________ -->
+                                                   <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+                                                <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+                                           Poste para marco trasero
+                                                
+                                                  </h1><br>
+                                          <div class='azul'>
+                                           
+                                      Para marco posterior o trasero y disponible para cualquier marca de remolque.
+
+                                          </div>
+                                          " href="images/catalogo/82.jpg">
+                                                <img class="redondear"  src="images/catalogo/82.jpg"  width="100%"  alt=""/>
+                                                <h3> Poste para marco trasero
+  </h3>  </a> </div>
+                                                <!-- items____________________________________________________________________________________________________________________ -->
+                                                     <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+                                                <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+                                         Travesaño
+
+                                                
+                                                  </h1><br>
+                                          <div class='azul'>
+                                           
+                                      Para marco de puerta cortina o abatible en acero inoxidable y acabado satinado.
+
+
+                                          </div>
+                                          " href="images/catalogo/83.jpg">
+                                                <img class="redondear"  src="images/catalogo/83.jpg"  width="100%"  alt=""/>
+                                                <h3> Travesaño
+
+  </h3>  </a> </div>
+                                                <!-- items____________________________________________________________________________________________________________________ -->
+                                                   <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+                                                <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+                                         Paneles duraplate o composite
+
+                                                
+                                                  </h1><br>
+                                          <div class='azul'>
+                                           
+                                     En diferentes medidas para caja seca de diferentes marcas, terminado color blanco con tratamiento especial para su remolque.
+*marca patenta, solo se utiliza como referencia 
+
+
+
+                                          </div>
+                                          " href="images/catalogo/84.jpg">
+                                                <img class="redondear"  src="images/catalogo/84.jpg"  width="100%"  alt=""/>
+                                                <h3> Paneles duraplate o composite
+
+  </h3>  </a> </div>
+                                                <!-- items____________________________________________________________________________________________________________________ -->
+                                                <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+                                                <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+                                      Lamina de aluminio 
+
+                                                
+                                                  </h1><br>
+                                          <div class='azul'>
+                                           
+                                    Disponibles en blanco wash en diferentes calibres y medidas con protección antigrafiti.
+
+
+                                          </div>
+                                          " href="images/catalogo/85.jpg">
+                                                <img class="redondear"  src="images/catalogo/85.jpg"  width="100%"  alt=""/>
+                                                <h3> Lamina de aluminio 
+
+  </h3>  </a> </div>
+                                                <!-- items____________________________________________________________________________________________________________________ -->
+                                                <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+                                                <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+                                     			 Lamina acanalada
+                                                
+                                                  </h1><br>
+                                          <div class='azul'>
+                                           
+                                   Disponible en diferentes medidas y diseños
+
+
+                                          </div>
+                                          " href="images/catalogo/85b.jpg">
+                                                <img class="redondear"  src="images/catalogo/85b.jpg"  width="100%"  alt=""/>
+                                                <h3> Lamina acanalada
+
+  </h3>  </a> </div>
+                                                <!-- items____________________________________________________________________________________________________________________ -->
+                                                 <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+                                                <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+                                     			 Tabletas para puerta cortina 
+
+                                                
+                                                  </h1><br>
+                                          <div class='azul'>
+                                           
+                                 Paneles inical, intermedios y finales en diferentes medidas.
+
+                                          </div>
+                                          " href="images/catalogo/86.jpg">
+                                                <img class="redondear"  src="images/catalogo/86.jpg"  width="100%"  alt=""/>
+                                                <h3> Tabletas para puerta cortina 
+
+
+  </h3>  </a> </div>
+                                                <!-- items____________________________________________________________________________________________________________________ -->
+                                                 <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+                                                <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+                                     			Triplay
+                                                
+                                                  </h1><br>
+                                          <div class='azul'>
+                                           
+                               En espesores de 1/4 y ½ de 49x96.
+
+                                          </div>
+                                          " href="images/catalogo/87.jpg">
+                                                <img class="redondear"  src="images/catalogo/87.jpg"  width="100%"  alt=""/>
+                                                <h3> Triplay
+
+
+  </h3>  </a> </div>
+                                                <!-- items____________________________________________________________________________________________________________________ -->
+                                                  <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+                                                <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+                                     			GASKET
+
+                                                
+                                                  </h1><br>
+                                          <div class='azul'>
+                                           
+                             Para puertas de caja seca en color gris con medidas de ½” , ¾” o 1” y para caja refrigerada en color negro, ofrecen un sello perfecto evitando filtraciones de luz  y fugas de temperatura.
+
+                                          </div>
+                                          " href="images/catalogo/88.jpg">
+                                                <img class="redondear"  src="images/catalogo/88.jpg"  width="100%"  alt=""/>
+                                                <h3> GASKET
+
+
+
+  </h3>  </a> </div>
+                                                <!-- items____________________________________________________________________________________________________________________ -->
+                                                
+                                                <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+                                                <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+                                     			Linning panel interior
+
+                                                
+                                                  </h1><br>
+                                          <div class='azul'>
+                                           
+                            Para caja seca de acero galvanizado y terminado en color blanco con tratamiento especial para el interior de su semirremolque.
+
+                                          </div>
+                                          " href="images/catalogo/89.jpg">
+                                                <img class="redondear"  src="images/catalogo/89.jpg"  width="100%"  alt=""/>
+                                                <h3> Linning panel interior
+
+
+
+  </h3>  </a> </div>
+                                                <!-- items____________________________________________________________________________________________________________________ -->
+                                                  <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+                                                <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+                                     			Piso Acanalado
+
+                                                
+                                                  </h1><br>
+                                          <div class='azul'>
+                                           
+                            Piso acanalado de aluminio para semirremolque refrigerados, disponibles en diferentes perfiles y diseños.
+
+                                          </div>
+                                          " href="images/catalogo/90.jpg">
+                                                <img class="redondear"  src="images/catalogo/90.jpg"  width="100%"  alt=""/>
+                                                <h3> Piso Acanalado
+
+
+
+  </h3>  </a> </div>
+                                                <!-- items____________________________________________________________________________________________________________________ -->
+                                                
+                                                 <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+                                                <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+                                     			Cargador de acero 
+
+                                                
+                                                  </h1><br>
+                                          <div class='azul'>
+                                           
+                          Perfil tipo I, alta resistencia con capacidad de 80,000 lbs terminado en primer gris. 
+
+
+                                          </div>
+                                          " href="images/catalogo/91.jpg">
+                                                <img class="redondear"  src="images/catalogo/91.jpg"  width="100%"  alt=""/>
+                                                <h3> Cargador de acero 
+
+
+
+  </h3>  </a> </div>
+                                                <!-- items____________________________________________________________________________________________________________________ -->
+                                                    <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+                                                <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+                                     			Cargador de Aluminio
+
+                                                
+                                                  </h1><br>
+                                          <div class='azul'>
+                                           
+                         Perfil tipo I en diferentes diseños para remolques refrigerados 
+
+
+
+                                          </div>
+                                          " href="images/catalogo/92.jpg">
+                                                <img class="redondear"  src="images/catalogo/92.jpg"  width="100%"  alt=""/>
+                                                <h3>Cargador de Aluminio 
+
+
+
+  </h3>  </a> </div>
+                                                <!-- items____________________________________________________________________________________________________________________ -->
+                                                
+                                                    <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+                                                <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+                                     			 Rieles y sistema de balance
+
+                                                
+                                                  </h1><br>
+                                          <div class='azul'>
+                                           
+                        Rieles y sistema de balance para puerta cortina con rollers de 1” o 2” de diámetro.
+ 
+
+
+
+                                          </div>
+                                          " href="images/catalogo/93.jpg">
+                                                <img class="redondear"  src="images/catalogo/93.jpg"  width="100%"  alt=""/>
+                                                <h3> Rieles y sistema de balance
+
+
+
+  </h3>  </a> </div>
+                                                <!-- items____________________________________________________________________________________________________________________ -->
+                                                
+                                                         <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+                                                <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+                                     			ZOCLOS
+
+                                                
+                                                  </h1><br>
+                                          <div class='azul'>
+                                           
+                       Galvanizado, aluminio o plástico en color blanco o negro 
+
+                                          </div>
+                                          " href="images/catalogo/94.jpg">
+                                                <img class="redondear"  src="images/catalogo/94.jpg"  width="100%"  alt=""/>
+                                                <h3> ZOCLOS
+
+
+
+  </h3>  </a> </div>
+                                                <!-- items____________________________________________________________________________________________________________________ -->
+                                                  <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+                                                <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+                                     		Postes laterales y frontales
+
+
+                                                
+                                                  </h1><br>
+                                          <div class='azul'>
+                                           
+                      Para remolque seco en acero galvanizado alta resistencia en diferentes medidas para cualquier tipo de remolque y  para caja refrigerada en aluminio color blanco tipo J con tratamiento especial.
+
+
+                                          </div>
+                                          " href="images/catalogo/95.jpg">
+                                                <img class="redondear"  src="images/catalogo/95.jpg"  width="100%"  alt=""/>
+                                                <h3> Postes laterales y frontales
+
+
+
+
+  </h3>  </a> </div>
+                                                <!-- items____________________________________________________________________________________________________________________ -->
+                                                   <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+                                                <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+                                     Postes logísticos
+
+
+
+                                                
+                                                  </h1><br>
+                                          <div class='azul'>
+                                           
+                     En diferentes tipos para caja seca en acero galvanizado de alta resistencia y en diferentes medidas.
+
+
+                                          </div>
+                                          " href="images/catalogo/96.jpg">
+                                                <img class="redondear"  src="images/catalogo/96.jpg"  width="100%"  alt=""/>
+                                                <h3> Postes logísticos
+
+
+
+
+
+  </h3>  </a> </div>
+                                                <!-- items____________________________________________________________________________________________________________________ -->
+                                                   <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+                                                <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+                                Linner panel
+                                                
+                                                  </h1><br>
+                                          <div class='azul'>
+                                           
+                    Lateral rebozado (corrugado) para remolque refrigerado.
+
+
+                                          </div>
+                                          " href="images/catalogo/97.jpg">
+                                                <img class="redondear"  src="images/catalogo/97.jpg"  width="100%"  alt=""/>
+                                                <h3> Linner panel
+  </h3>  </a> </div>
+                                                <!-- items____________________________________________________________________________________________________________________ -->
+                                                      <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+                                                <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+                               Toldo de aluminio
+
+                                                
+                                                  </h1><br>
+                                          <div class='azul'>
+                                           
+                   En rollo en acabado natural con aleación especial y tratamiento térmico especialmente diseñado para toldo de remolque.
+
+                                          </div>
+                                          " href="images/catalogo/98.jpg">
+                                                <img class="redondear"  src="images/catalogo/98.jpg"  width="100%"  alt=""/>
+                                                <h3> Toldo de aluminio
+
+  </h3>  </a> </div>
+                                                <!-- items____________________________________________________________________________________________________________________ -->
+                                                             <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+                                                <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+                              Bordas
+
+                                                
+                                                  </h1><br>
+                                          <div class='azul'>
+                                           
+                  En Utility encontrara la bordas inferiores o superiores para cualquier. Contamos con bordas laterales, inferiores  o superiores.
+
+
+                                          </div>
+                                          " href="images/catalogo/99.jpg">
+                                                <img class="redondear"  src="images/catalogo/99.jpg"  width="100%"  alt=""/>
+                                                <h3> Bordas
+
+  </h3>  </a> </div>
+                                                <!-- items____________________________________________________________________________________________________________________ -->
+                                                     <div class=" contenedorazul redondear challenge col-lg-3 col-md-4 col-sm-6 col-xs-12" >
+                                                <a  class="fancybox" rel="group" title="<h1 class='rojo'>
+                              Pisos
+
+                                                
+                                                  </h1><br>
+                                          <div class='azul'>
+                                           
+                 Tablón para piso de encino laminado  para caja seca o plataforma.
+
+
+                                          </div>
+                                          " href="images/catalogo/100.jpg">
+                                                <img class="redondear"  src="images/catalogo/100.jpg"  width="100%"  alt=""/>
+                                                <h3> Pisos
+
+  </h3>  </a> </div>
+                                                <!-- items____________________________________________________________________________________________________________________ -->
+                                                
+                                                
+                                                
+    </div>
+       
+      
+      
+      
+
+
+ 
+ 
+</div>
+
+
+ 
+
+</div>
+
+
+<script>
+tamano=$("#footer-page").height();
+paginatamano=$(document).height();
+$(".content-page").css("height",paginatamano-tamano-10+"px");
+
+
+
+// initialize Masonry
+    var $container = $('#masonryContainer');
+
+    $container.multipleFilterMasonry({
+      itemSelector: '.challenge',
+      filtersGroupSelector:'.filters'
+    });
+
+</script>
+
+</body>
+
+</html> 
